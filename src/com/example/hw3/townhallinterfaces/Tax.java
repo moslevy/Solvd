@@ -1,4 +1,4 @@
-package com.example.hw3.townhall;
+package com.example.hw3.townhallinterfaces;
 
 public abstract class Tax {
 
