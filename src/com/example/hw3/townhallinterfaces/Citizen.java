@@ -2,7 +2,7 @@ package com.example.hw3.townhallinterfaces;
 
 import java.util.Date;
 
-public class Citizen extends Person {
+public class Citizen extends Person{
 
     private Address address;
     private Date purchaseDate;
@@ -42,6 +42,7 @@ public class Citizen extends Person {
                 ", SSN='" + SSN + '\'' +
                 '}';
     }
+
 
 
 }

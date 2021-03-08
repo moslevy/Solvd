@@ -2,7 +2,7 @@ package com.example.hw3.townhallinterfaces;
 
 import java.util.List;
 
-public class Commercial extends Property {
+public class Commercial extends Property implements Taxable{
 
     private int numOfRetailStores;
     private boolean isMall;
@@ -57,7 +57,14 @@ public class Commercial extends Property {
                     + commercial.getSquareMeters() * commercialTax.getCountyTax();
         }
         property.setYearlyTaxes(result);
+
+        printMessage("Implemented interface in Commercial Class");
+
         return result;
     }
 
+    @Override
+    public void printMessage(String msg) {
+        System.out.println(msg);
+    }
 }
