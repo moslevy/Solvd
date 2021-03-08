@@ -58,13 +58,14 @@ public class Commercial extends Property implements Taxable{
         }
         property.setYearlyTaxes(result);
 
-        printMessage("Implemented interface in Commercial Class");
+        printMessage("Implemented interface in Commercial Class", "Blue");
 
         return result;
     }
 
     @Override
-    public void printMessage(String msg) {
+    public void printMessage(String msg, String color) {
+        System.out.println(color);
         System.out.println(msg);
     }
 }

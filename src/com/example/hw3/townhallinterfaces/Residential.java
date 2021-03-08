@@ -54,13 +54,14 @@ public class Residential extends Property implements Taxable{
             residential.setYearlyTaxes(result);
         }
 
-        printMessage("Implemented interface in Residential Class");
+        printMessage("Implemented interface in Residential Class", "Orange");
         return result;
     }
 
 
     @Override
-    public void printMessage(String msg) {
+    public void printMessage(String msg, String color) {
+        System.out.println(color);
         System.out.println(msg);
     }
 }
