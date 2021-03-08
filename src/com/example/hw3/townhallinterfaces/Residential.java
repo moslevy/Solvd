@@ -1,6 +1,6 @@
 package com.example.hw3.townhallinterfaces;
 
-public class Residential extends Property implements Taxable, OwnerDetails {
+public class Residential extends Property implements ITaxable, IOwnerDetails {
 
     private int numBedrooms;
     private boolean hasSwimmingPool;
@@ -40,7 +40,7 @@ public class Residential extends Property implements Taxable, OwnerDetails {
 
     @Override
     public float calculateTaxes(Property property, Tax tax) {
-        float result= 0f;
+        float result;
         Residential residential = (Residential) property;
         ResidentialTax residentialTax = (ResidentialTax) tax;
         if(residential.hasSwimmingPool){

@@ -1,6 +1,5 @@
 package com.example.hw3.townhallinterfaces;
 
-public interface Taxable {
-    String color = new String();
+public interface ITaxable {
 void printMessage(String msg, String color);
 }

@@ -2,7 +2,7 @@ package com.example.hw3.townhallinterfaces;
 
 import java.util.List;
 
-public class Commercial extends Property implements Taxable, OwnerDetails {
+public class Commercial extends Property implements ITaxable, IOwnerDetails {
 
     private int numOfRetailStores;
     private boolean isMall;
@@ -44,7 +44,7 @@ public class Commercial extends Property implements Taxable, OwnerDetails {
 
     @Override
     public float calculateTaxes(Property property, Tax tax) {
-        float result = 0f;
+        float result;
         CommercialTax commercialTax = (CommercialTax) tax;
         Commercial commercial = (Commercial) property;
 
