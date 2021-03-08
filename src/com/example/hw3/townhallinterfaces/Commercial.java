@@ -71,7 +71,7 @@ public class Commercial extends Property implements Taxable, OwnerDetails {
 
     @Override
     public void purchaseDate(Property property) {
-        System.out.println("Owner's ssn is: " +property.getOwner().getSSN() + " and his "
+        System.out.println("Owner's SSN is: " +property.getOwner().getSSN() + " and his "
                 + " DOB is: " + property.getOwner().getDOB());
     }
 }
