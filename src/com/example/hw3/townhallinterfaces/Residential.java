@@ -1,6 +1,6 @@
 package com.example.hw3.townhallinterfaces;
 
-public class Residential extends Property implements Taxable{
+public class Residential extends Property implements Taxable, OwnerDetails {
 
     private int numBedrooms;
     private boolean hasSwimmingPool;
@@ -55,6 +55,7 @@ public class Residential extends Property implements Taxable{
         }
 
         printMessage("Implemented interface in Residential Class", "Orange");
+        purchaseDate(property);
         return result;
     }
 
@@ -63,5 +64,10 @@ public class Residential extends Property implements Taxable{
     public void printMessage(String msg, String color) {
         System.out.println(color);
         System.out.println(msg);
+    }
+
+    @Override
+    public void purchaseDate(Property property) {
+        System.out.println(property.getAddress().toString());
     }
 }
