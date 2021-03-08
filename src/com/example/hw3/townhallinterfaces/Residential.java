@@ -54,15 +54,15 @@ public class Residential extends Property implements ITaxable, IOwnerDetails {
             residential.setYearlyTaxes(result);
         }
 
-        printMessage("Implemented interface in Residential Class", "Orange");
+        printMessage("Implemented interface in Residential Class", "Residential Property");
         purchaseDate(property);
         return result;
     }
 
 
     @Override
-    public void printMessage(String msg, String color) {
-        System.out.println(color);
+    public void printMessage(String msg, String typeOfProperty) {
+        System.out.println(typeOfProperty);
         System.out.println(msg);
     }
 
