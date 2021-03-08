@@ -17,8 +17,8 @@ public class TownHallTest {
 
         // Create a few addresses
         Address addressCitizen1 = new Address(1234, "Ventura Blvd", "Tarzana", "CA", "91356");
-       Address addressProperty1 = new Address(5555, "Nazca", "Vicente Lopez", "Bs As", "ATY 223 ER");
-      Address addressCitizen2 = new Address(9842, "Nagle Ave", "Sherman Oaks", "CA", "91423");
+        Address addressProperty1 = new Address(5555, "Nazca", "Vicente Lopez", "Bs As", "ATY 223 ER");
+        Address addressCitizen2 = new Address(9842, "Nagle Ave", "Sherman Oaks", "CA", "91423");
         Address addressProperty2 = new Address(4321, "Cuba", "CABA", "Bs As", "AEH1428");
 
         // Create 2 vehicle lists
@@ -27,9 +27,9 @@ public class TownHallTest {
 
         // Create cars to add to vehicle lists.
         Car car1 = new Car("Renault", "Duster", "OPQ4444", 4.4f, "Black", false);
-       Car car2 = new Car("Tesla", "Model X", "AE 555 QR", 2f, "Grey", true);
+        Car car2 = new Car("Tesla", "Model X", "AE 555 QR", 2f, "Grey", true);
         Truck truck1 = new Truck("Scania", "F1", "AA 454 QF", 16, false);
-       Conventional heavyConventional = new Conventional("Volvo", "VL2020", "AE 456 OP", 3);
+        Conventional heavyConventional = new Conventional("Volvo", "VL2020", "AE 456 OP", 3);
 
         // Add create vehicles to vehicle lists
         vehiclesList1.add(truck1);

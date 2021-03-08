@@ -2,7 +2,7 @@ package com.example.hw3.townhallinterfaces;
 
 import java.util.List;
 
-public class Commercial extends Property implements Taxable{
+public class Commercial extends Property implements Taxable, OwnerDetails {
 
     private int numOfRetailStores;
     private boolean isMall;
@@ -59,7 +59,7 @@ public class Commercial extends Property implements Taxable{
         property.setYearlyTaxes(result);
 
         printMessage("Implemented interface in Commercial Class", "Blue");
-
+        purchaseDate(property);
         return result;
     }
 
@@ -67,5 +67,11 @@ public class Commercial extends Property implements Taxable{
     public void printMessage(String msg, String color) {
         System.out.println(color);
         System.out.println(msg);
+    }
+
+    @Override
+    public void purchaseDate(Property property) {
+        System.out.println("Owner's ssn is: " +property.getOwner().getSSN() + " and his "
+                + " DOB is: " + property.getOwner().getDOB());
     }
 }
