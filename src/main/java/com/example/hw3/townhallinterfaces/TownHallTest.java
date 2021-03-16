@@ -1,5 +1,6 @@
 package com.example.hw3.townhallinterfaces;
 
+import com.example.hw3.townhallinterfaces.exceptions.ExceptionExample;
 import com.example.hw3.townhallinterfaces.models.people.Citizen;
 import com.example.hw3.townhallinterfaces.models.people.Employee;
 import com.example.hw3.townhallinterfaces.models.people.Person;
@@ -85,7 +86,15 @@ public class TownHallTest {
         } catch (Exception e) {
             System.out.println("Property owner not found, please run the program again to continue.");
         }
+
+        try{
+            ExceptionExample exceptionExample = new ExceptionExample();
+            exceptionExample.testException(0);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
+
 
     // Method to find property and calculate taxes based on type of property and taxes associated.
     public static Property findProperty(String lastName, ArrayList<Property> properties) {
