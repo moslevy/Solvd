@@ -1,0 +1,35 @@
+2021-03-16 09:04:43.707 [main] DEBUG com.example.hw1.helloworld.HelloWorld - We've just greeted the user!
+2021-03-16 09:04:43.709 [main] INFO  com.example.hw1.helloworld.HelloWorld - We've just greeted the user!
+2021-03-16 09:04:43.709 [main] WARN  com.example.hw1.helloworld.HelloWorld - We've just greeted the user!
+2021-03-16 09:04:43.709 [main] ERROR com.example.hw1.helloworld.HelloWorld - We've just greeted the user!
+2021-03-16 09:04:43.709 [main] FATAL com.example.hw1.helloworld.HelloWorld - We've just greeted the user!
+2021-03-16 09:05:10.911 [main] DEBUG com.example.hw1.helloworld.HelloWorld - We've just greeted the user!
+2021-03-16 09:05:10.914 [main] INFO  com.example.hw1.helloworld.HelloWorld - We've just greeted the user!
+2021-03-16 09:05:10.915 [main] WARN  com.example.hw1.helloworld.HelloWorld - We've just greeted the user!
+2021-03-16 09:05:10.915 [main] ERROR com.example.hw1.helloworld.HelloWorld - We've just greeted the user!
+2021-03-16 09:05:10.915 [main] FATAL com.example.hw1.helloworld.HelloWorld - We've just greeted the user!
+2021-03-16 09:07:38.837 [main] DEBUG com.example.hw1.helloworld.HelloWorld - [DEBUG] We've just greeted the user!
+2021-03-16 09:07:38.839 [main] INFO  com.example.hw1.helloworld.HelloWorld - [INFO] We've just greeted the user!
+2021-03-16 09:07:38.839 [main] WARN  com.example.hw1.helloworld.HelloWorld - [WARN] We've just greeted the user!
+2021-03-16 09:07:38.839 [main] ERROR com.example.hw1.helloworld.HelloWorld - [ERROR] We've just greeted the user!
+2021-03-16 09:07:38.840 [main] FATAL com.example.hw1.helloworld.HelloWorld - [FATAL] We've just greeted the user!
+2021-03-16 09:08:18.869 [main] DEBUG com.example.hw1.helloworld.HelloWorld - [DEBUG] We've just greeted the user!
+2021-03-16 09:08:18.871 [main] INFO  com.example.hw1.helloworld.HelloWorld - [INFO] We've just greeted the user!
+2021-03-16 09:08:18.871 [main] WARN  com.example.hw1.helloworld.HelloWorld - [WARN] We've just greeted the user!
+2021-03-16 09:08:18.871 [main] ERROR com.example.hw1.helloworld.HelloWorld - [ERROR] We've just greeted the user!
+2021-03-16 09:08:18.871 [main] FATAL com.example.hw1.helloworld.HelloWorld - [FATAL] We've just greeted the user!
+2021-03-16 09:08:37 [main] DEBUG com.example.hw1.helloworld.HelloWorld - [DEBUG] We've just greeted the user!
+2021-03-16 09:08:37 [main] INFO  com.example.hw1.helloworld.HelloWorld - [INFO] We've just greeted the user!
+2021-03-16 09:08:37 [main] WARN  com.example.hw1.helloworld.HelloWorld - [WARN] We've just greeted the user!
+2021-03-16 09:08:37 [main] ERROR com.example.hw1.helloworld.HelloWorld - [ERROR] We've just greeted the user!
+2021-03-16 09:08:37 [main] FATAL com.example.hw1.helloworld.HelloWorld - [FATAL] We've just greeted the user!
+2021-03-16 09:08:59.972 [main] DEBUG com.example.hw1.helloworld.HelloWorld - [DEBUG] We've just greeted the user!
+2021-03-16 09:08:59.974 [main] INFO  com.example.hw1.helloworld.HelloWorld - [INFO] We've just greeted the user!
+2021-03-16 09:08:59.974 [main] WARN  com.example.hw1.helloworld.HelloWorld - [WARN] We've just greeted the user!
+2021-03-16 09:08:59.975 [main] ERROR com.example.hw1.helloworld.HelloWorld - [ERROR] We've just greeted the user!
+2021-03-16 09:08:59.975 [main] FATAL com.example.hw1.helloworld.HelloWorld - [FATAL] We've just greeted the user!
+2021-03-16 09:09:12.0831 [main] DEBUG com.example.hw1.helloworld.HelloWorld - [DEBUG] We've just greeted the user!
+2021-03-16 09:09:12.0833 [main] INFO  com.example.hw1.helloworld.HelloWorld - [INFO] We've just greeted the user!
+2021-03-16 09:09:12.0833 [main] WARN  com.example.hw1.helloworld.HelloWorld - [WARN] We've just greeted the user!
+2021-03-16 09:09:12.0833 [main] ERROR com.example.hw1.helloworld.HelloWorld - [ERROR] We've just greeted the user!
+2021-03-16 09:09:12.0833 [main] FATAL com.example.hw1.helloworld.HelloWorld - [FATAL] We've just greeted the user!
