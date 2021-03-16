@@ -1,0 +1,297 @@
+@startuml
+
+title __TOWNHALLINTERFACES's Class Diagram__\n
+
+  namespace com.example.hw3.townhallinterfaces {
+    class com.example.hw3.townhallinterfaces.Address {
+        - city : String
+        - number : int
+        - state : String
+        - street : String
+        - zip : String
+        + Address()
+        + Address()
+        + getCity()
+        + getNumber()
+        + getState()
+        + getStreet()
+        + getZip()
+        + setCity()
+        + setNumber()
+        + setState()
+        + setStreet()
+        + setZip()
+        + toString()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    class com.example.hw3.townhallinterfaces.Car {
+        - color : String
+        - engineSize : float
+        - isElectric : boolean
+        + Car()
+        + getColor()
+        + getEngineSize()
+        + isElectric()
+        + setColor()
+        + setElectric()
+        + setEngineSize()
+        + toString()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    class com.example.hw3.townhallinterfaces.Citizen {
+        - purchaseDate : Date
+        + Citizen()
+        + Citizen()
+        + getAddress()
+        + getPurchaseDate()
+        + setAddress()
+        + setPurchaseDate()
+        + toString()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    class com.example.hw3.townhallinterfaces.City {
+        - name : String
+        + City()
+        + City()
+        + getName()
+        + setName()
+        + toString()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    class com.example.hw3.townhallinterfaces.Commercial {
+        - isMall : boolean
+        - numOfRetailStores : int
+        - vehicleList : List<Vehicle>
+        + Commercial()
+        + Commercial()
+        + calculateTaxes()
+        + getNumOfRetailStores()
+        + getVehicleList()
+        + isMall()
+        + printMessage()
+        + purchaseDate()
+        + setMall()
+        + setNumOfRetailStores()
+        + setVehicleList()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    class com.example.hw3.townhallinterfaces.CommercialTax {
+        - productionTax : float
+        - sewageTax : float
+        - unionTax : float
+        + CommercialTax()
+        + getProductionTax()
+        + getSewageTax()
+        + getUnionTax()
+        + setProductionTax()
+        + setSewageTax()
+        + setUnionTax()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    class com.example.hw3.townhallinterfaces.Conventional {
+        - numAxles : int
+        + Conventional()
+        + getNumAxles()
+        + setNumAxles()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    class com.example.hw3.townhallinterfaces.Employee {
+        - employeeId : int
+        - position : String
+        + Employee()
+        + Employee()
+        + Employee()
+        + toString()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    interface com.example.hw3.townhallinterfaces.IOwnerDetails {
+        {abstract} + purchaseDate()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    interface com.example.hw3.townhallinterfaces.ITaxable {
+        {abstract} + printMessage()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    abstract class com.example.hw3.townhallinterfaces.Person {
+        ~ DOB : Date
+        ~ SSN : String
+        ~ firstName : String
+        ~ lastName : String
+        + Person()
+        + Person()
+        + getDOB()
+        + getFirstName()
+        + getLastName()
+        + getSSN()
+        + setDOB()
+        + setFirstName()
+        + setLastName()
+        + setSSN()
+        + toString()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    abstract class com.example.hw3.townhallinterfaces.Property {
+        - squareMeters : float
+        - yearlyTaxes : float
+        + Property()
+        + Property()
+        {abstract} + calculateTaxes()
+        + getAddress()
+        + getOwner()
+        + getSquareMeters()
+        + getYearlyTaxes()
+        + setAddress()
+        + setOwner()
+        + setSquareMeters()
+        + setYearlyTaxes()
+        + toString()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    class com.example.hw3.townhallinterfaces.Residential {
+        - hasSwimmingPool : boolean
+        - numBedrooms : int
+        + Residential()
+        + Residential()
+        + calculateTaxes()
+        + getNumBedrooms()
+        + isHasSwimmingPool()
+        + printMessage()
+        + purchaseDate()
+        + setHasSwimmingPool()
+        + setNumBedrooms()
+        + toString()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    class com.example.hw3.townhallinterfaces.ResidentialTax {
+        - freewayTax : float
+        - schoolTax : float
+        + ResidentialTax()
+        + getFreewayTax()
+        + getSchoolTax()
+        + setFreewayTax()
+        + setSchoolTax()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    abstract class com.example.hw3.townhallinterfaces.Tax {
+        - cityTax : float
+        - countyTax : float
+        - isRecurring : boolean
+        + Tax()
+        + getCityTax()
+        + getCountyTax()
+        + isRecurring()
+        + setCityTax()
+        + setCountyTax()
+        + setRecurring()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    class com.example.hw3.townhallinterfaces.TownHallTest {
+        {static} - citizens : ArrayList<Person>
+        {static} - properties : ArrayList<Property>
+        {static} - taxesOwed : float
+        {static} + findProperty()
+        {static} + main()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    class com.example.hw3.townhallinterfaces.Truck {
+        - isForkLift : boolean
+        - wheels : int
+        + Truck()
+        + getWheels()
+        + isForkLift()
+        + setForkLift()
+        + setWheels()
+    }
+  }
+  
+
+  namespace com.example.hw3.townhallinterfaces {
+    abstract class com.example.hw3.townhallinterfaces.Vehicle {
+        - brand : String
+        - licensePlate : String
+        - model : String
+        + Vehicle()
+        + getBrand()
+        + getLicensePlate()
+        + getModel()
+        + setBrand()
+        + setLicensePlate()
+        + setModel()
+    }
+  }
+  
+
+  com.example.hw3.townhallinterfaces.Car -up-|> com.example.hw3.townhallinterfaces.Vehicle
+  com.example.hw3.townhallinterfaces.Citizen -up-|> com.example.hw3.townhallinterfaces.Person
+  com.example.hw3.townhallinterfaces.Citizen o-- com.example.hw3.townhallinterfaces.Address : address
+  com.example.hw3.townhallinterfaces.Commercial .up.|> com.example.hw3.townhallinterfaces.IOwnerDetails
+  com.example.hw3.townhallinterfaces.Commercial .up.|> com.example.hw3.townhallinterfaces.ITaxable
+  com.example.hw3.townhallinterfaces.Commercial -up-|> com.example.hw3.townhallinterfaces.Property
+  com.example.hw3.townhallinterfaces.CommercialTax -up-|> com.example.hw3.townhallinterfaces.Tax
+  com.example.hw3.townhallinterfaces.Conventional -up-|> com.example.hw3.townhallinterfaces.Vehicle
+  com.example.hw3.townhallinterfaces.Employee -up-|> com.example.hw3.townhallinterfaces.Person
+  com.example.hw3.townhallinterfaces.Property o-- com.example.hw3.townhallinterfaces.Address : address
+  com.example.hw3.townhallinterfaces.Property o-- com.example.hw3.townhallinterfaces.Person : owner
+  com.example.hw3.townhallinterfaces.Residential .up.|> com.example.hw3.townhallinterfaces.IOwnerDetails
+  com.example.hw3.townhallinterfaces.Residential .up.|> com.example.hw3.townhallinterfaces.ITaxable
+  com.example.hw3.townhallinterfaces.Residential -up-|> com.example.hw3.townhallinterfaces.Property
+  com.example.hw3.townhallinterfaces.ResidentialTax -up-|> com.example.hw3.townhallinterfaces.Tax
+  com.example.hw3.townhallinterfaces.Truck -up-|> com.example.hw3.townhallinterfaces.Vehicle
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
