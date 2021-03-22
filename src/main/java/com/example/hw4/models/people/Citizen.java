@@ -1,6 +1,6 @@
-package com.example.hw3.townhallinterfaces.models.people;
+package com.example.hw4.models.people;
 
-import com.example.hw3.townhallinterfaces.models.properties.Address;
+import com.example.hw4.models.properties.Address;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package com.example.hw3.townhallinterfaces.models.people;
+package com.example.hw4.models.people;
 
 import java.util.Date;
 

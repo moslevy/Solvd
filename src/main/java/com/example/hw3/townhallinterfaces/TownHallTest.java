@@ -53,8 +53,8 @@ public class TownHallTest {
         vehiclesList2.add(car1);
         vehiclesList2.add(car2);
 
-        Person owner1 = new Citizen("John", "Smith", new Date("04/03/2003"), "555-22-3333", addressCitizen1, new Date("20/02/2009"));
-        Person owner2 = new Employee("Erik", "Royal", new Date("01/02/1982"), "555-22-1111", 34, "Cousil");
+        Person owner1 = new Citizen("John", "Smith", 68, new Date("04/03/2003"), "555-22-3333", addressCitizen1, new Date("20/02/2009"));
+        Person owner2 = new Employee("Erik", "Royal", 58, new Date("01/02/1982"), "555-22-1111", 34, "Cousil");
 
         Property commercialProperty = new Commercial(addressProperty1, owner1, 33344.3f, 56, false, vehiclesList1);
         Property residentialProperty = new Residential(addressProperty2, owner2, 345.1f, 3, true);
