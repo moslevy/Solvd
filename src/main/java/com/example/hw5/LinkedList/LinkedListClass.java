@@ -18,6 +18,10 @@ public class LinkedListClass {
         System.out.println(linky.stream().count());
 
     }
+
+    // Maybe register the taxes payments and pending money owed.
+
+
 }
 
 

@@ -6,7 +6,7 @@ public class ExceptionExample {
 
     // Our test class to demonstrate custom exception created
     public String testException(int i) throws IncorrectNumberExcption {
-        if (i ==0){
+        if (i == 0){
             // throw our custom exception
             throw new IncorrectNumberExcption("Sorry, number has to be > o = than 1");
         }

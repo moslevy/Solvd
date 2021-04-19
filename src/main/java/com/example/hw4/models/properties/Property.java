@@ -1,5 +1,6 @@
 package com.example.hw4.models.properties;
 
+import com.example.hw4.enums.Taxes;
 import com.example.hw4.models.people.Person;
 import com.example.hw4.models.taxes.Tax;
 
@@ -60,6 +61,6 @@ public abstract class Property {
                 '}';
     }
 
-    public abstract float calculateTaxes(Property property, Tax tax);
+    public abstract float calculateTaxes(Property property, Taxes tax);
 
 }

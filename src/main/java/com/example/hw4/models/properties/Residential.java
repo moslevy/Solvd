@@ -1,5 +1,6 @@
 package com.example.hw4.models.properties;
 
+import com.example.hw4.enums.Taxes;
 import com.example.hw4.interfaces.IOwnerDetails;
 import com.example.hw4.interfaces.ITaxable;
 import com.example.hw4.models.people.Person;
@@ -45,18 +46,18 @@ public class Residential extends Property implements ITaxable, IOwnerDetails {
     }
 
     @Override
-    public float calculateTaxes(Property property, Tax tax) {
+    public float calculateTaxes(Property property, Taxes tax) {
         float result;
         Residential residential = (Residential) property;
-        ResidentialTax residentialTax = (ResidentialTax) tax;
+        Taxes residentialTax = tax;
         if(residential.hasSwimmingPool){
-            result = residential.getNumBedrooms()*residentialTax.getCountyTax()
-                    +residential.getSquareMeters()*residentialTax.getFreewayTax()
-            +residential.getNumBedrooms()*residentialTax.getSchoolTax()*1000;
+            result = residential.getNumBedrooms()*residentialTax.RESIDENTIAL.getSchoolTax()
+                    +residential.getSquareMeters()*residentialTax.RESIDENTIAL.getFreewayTax()
+            +residential.getNumBedrooms()*residentialTax.RESIDENTIAL.getSchoolTax()*1000;
             residential.setYearlyTaxes(result);
         }else {
-            result = residential.getSquareMeters()*tax.getCityTax()
-            +residential.getSquareMeters()*residentialTax.getFreewayTax()*1000;
+            result = residential.getSquareMeters()*residentialTax.RESIDENTIAL.getFreewayTax()
+            +residential.getSquareMeters()*residentialTax.RESIDENTIAL.getProductionTax()*1000;
             residential.setYearlyTaxes(result);
         }
 

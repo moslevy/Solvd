@@ -29,4 +29,7 @@ public class HashSetClass {
         hashSet.remove("Roland");
         System.out.println(hashSet);
     }
+
+    //Build a employee list so we use the no repetition feature of hashset.
+
 }

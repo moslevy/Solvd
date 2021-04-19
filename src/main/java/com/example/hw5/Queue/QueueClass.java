@@ -18,4 +18,5 @@ public class QueueClass {
         System.out.println("Queue size is: " +queue.size());
         System.out.println("Queue head item: "+queue.peek()); // Look at the first item on the queue.
     }
+    // Queue of citizens that would like to pay their taxes.
 }

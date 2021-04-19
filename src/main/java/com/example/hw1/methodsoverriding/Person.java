@@ -1,5 +1,7 @@
 package com.example.hw1.methodsoverriding;
 
+import java.util.Objects;
+
 public class Person {
     private String name;
     private int age;
@@ -28,16 +30,17 @@ public class Person {
     }
 
 
-
     @Override
-    public int hashCode() {
-        return this.age;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return Objects.equals(name, person.name);
     }
 
     @Override
-    public boolean equals(Object obj) {
-        Person otherPerson = (Person) obj;
-        return this.name.equals(otherPerson.name) && this.age == otherPerson.age;
+    public int hashCode() {
+        return Objects.hash(age);
     }
 
     @Override

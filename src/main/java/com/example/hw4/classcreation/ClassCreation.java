@@ -20,7 +20,4 @@ public class ClassCreation {
         return new CommercialTax(2.5f, 1.8f, true, 0.98f, 1.1f, 8.0f);
     }
 
-
-
-
 }

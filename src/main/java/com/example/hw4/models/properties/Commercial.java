@@ -1,5 +1,6 @@
 package com.example.hw4.models.properties;
 
+import com.example.hw4.enums.Taxes;
 import com.example.hw4.interfaces.IOwnerDetails;
 import com.example.hw4.interfaces.ITaxable;
 import com.example.hw4.models.people.Person;
@@ -50,9 +51,9 @@ public class Commercial extends Property implements ITaxable, IOwnerDetails {
     }
 
     @Override
-    public float calculateTaxes(Property property, Tax tax) {
+    public float calculateTaxes(Property property, Taxes tax) {
         float result;
-        CommercialTax commercialTax = (CommercialTax) tax;
+        Taxes commercialTax = tax;
         Commercial commercial = (Commercial) property;
 
         if (commercial.vehicleList.size() > 2) {
@@ -60,8 +61,8 @@ public class Commercial extends Property implements ITaxable, IOwnerDetails {
                     + commercial.getSquareMeters() * commercialTax.getSewageTax()
                     + commercial.getSquareMeters() * commercialTax.getUnionTax();
         } else {
-            result = commercial.getNumOfRetailStores() * commercialTax.getCityTax()
-                    + commercial.getSquareMeters() * commercialTax.getCountyTax();
+            result = commercial.getNumOfRetailStores() * commercialTax.getProductionTax()
+                    + commercial.getSquareMeters() * commercialTax.getUnionTax();
         }
         property.setYearlyTaxes(result);
 
