@@ -1,0 +1,14 @@
+2021-04-18 21:11:43,661 [main] INFO  com.solvd.townhall.TownHallTest - Set Addresses by calling method created in this classclass com.solvd.townhall.TownHallTest
+2021-04-18 21:11:46,060 [main] ERROR com.solvd.townhall.TownHallTest - Because you entered an invalid LAST Name property is NULL.
+2021-04-18 21:11:46,074 [main] FATAL com.solvd.townhall.TownHallTest - PROPERTY NOT FOUND!!! PLEASE TRY AGAIN
+2021-04-18 21:49:28,334 [main] INFO  com.solvd.townhall.TownHallTest - Set Addresses by calling method created in this classclass com.solvd.townhall.TownHallTest
+2021-04-18 21:49:30,959 [main] FATAL com.solvd.townhall.TownHallTest - PROPERTY NOT FOUND!!! PLEASE TRY AGAIN
+2021-04-18 21:49:30,959 [main] ERROR com.solvd.townhall.TownHallTest - Passed an error on purpose to show exception in console
+2021-04-18 21:53:52,670 [main] INFO  com.solvd.townhall.TownHallTest - Set Addresses by calling method created in this classclass com.solvd.townhall.TownHallTest
+2021-04-18 21:54:16,147 [main] INFO  com.solvd.townhall.TownHallTest - Set Addresses by calling method created in this classclass com.solvd.townhall.TownHallTest
+2021-04-18 21:54:20,551 [main] FATAL com.solvd.townhall.TownHallTest - PROPERTY NOT FOUND!!! PLEASE TRY AGAIN
+2021-04-18 21:54:20,551 [main] ERROR com.solvd.townhall.TownHallTest - Passed an error on purpose to show exception in console
+2021-04-18 21:55:59,707 [main] INFO  com.solvd.townhall.TownHallTest - Set Addresses by calling method created in this classclass com.solvd.townhall.TownHallTest
+2021-04-18 21:56:01,558 [main] FATAL com.solvd.townhall.TownHallTest - PROPERTY NOT FOUND!!! PLEASE TRY AGAIN
+2021-04-18 21:56:01,559 [main] ERROR com.solvd.townhall.TownHallTest - Passed an error on purpose to show exception in console
+2021-04-18 21:56:01,560 [main] INFO  com.solvd.townhall.TownHallTest - Full taxes Reportclass com.solvd.townhall.generics.Report

@@ -1,0 +1,6 @@
+projectKey=groupId:Solvd
+serverUrl=http://localhost:9000
+serverVersion=7.5.0.20543
+dashboardUrl=http://localhost:9000/dashboard?id=groupId%3ASolvd
+ceTaskId=AXjD-Mr6GnrmcBJzhsR2
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXjD-Mr6GnrmcBJzhsR2
