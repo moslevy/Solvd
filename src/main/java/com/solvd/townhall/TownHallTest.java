@@ -1,6 +1,5 @@
 package com.solvd.townhall;
 
-import com.solvd.townhall.TownHallTest;
 import com.solvd.townhall.enums.Taxes;
 import com.solvd.townhall.exceptions.ExceptionExample;
 import com.solvd.townhall.exceptions.InvalidUserException;
@@ -19,10 +18,12 @@ import com.solvd.townhall.models.vehicles.Car;
 import com.solvd.townhall.models.vehicles.Conventional;
 import com.solvd.townhall.models.vehicles.Truck;
 import com.solvd.townhall.models.vehicles.Vehicle;
+import org.apache.commons.lang3.time.CalendarUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.*;
+import java.util.stream.Stream;
 
 public class TownHallTest {
     private static final Logger logger = LogManager.getLogger(TownHallTest.class);
@@ -36,25 +37,19 @@ public class TownHallTest {
         this.taxesEnum = taxesEnum;
     }
 
-
     public static void main(String[] args) {
-
         City city = new City("Los Angeles");
 
         // Create addresses with method located in City Class
-        logger.info("Set Addresses by calling method created in this class" + TownHallTest.class);
+        logger.info("Set Addresses by calling method created in class" + City.class);
         city.setAddresses(createAddresses().toArray(new Address[0]));
 
-
         // Create taxes
-
         city.setTaxes(createTaxes());
-        List<Tax> taxes = new ArrayList<>(createTaxes());
 
         // Create 2 vehicle lists
         List<Vehicle> vehiclesList1 = new ArrayList<>();
         List<Vehicle> vehiclesList2 = new ArrayList<>();
-
 
         // Create cars to add to vehicle lists.
         Car car1 = new Car("Renault", "Duster", "OPQ4444", 4.4f, "Black", false);
@@ -68,8 +63,14 @@ public class TownHallTest {
         vehiclesList2.add(car1);
         vehiclesList2.add(car2);
 
-        Person owner1 = new Citizen("John", "Smith", 68, new Date("04/03/2003"), "555-22-3333", city.getAddresses()[2], new Date("20/02/2009"));
-        Person owner2 = new Employee("Erik", "Royal", 58, new Date("01/02/1982"), "555-22-1111", 34, "Cousil");
+        Date today = Calendar.getInstance().getTime();
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(1978,10,01);
+        calendar.add(Calendar.YEAR, -20);
+        Person owner1 = new Citizen("John", "Smith", 68, calendar.getTime(), "555-22-3333", city.getAddresses()[2], new Date("20/02/2009"));
+
+        calendar.add(Calendar.MONTH, -5);
+        Person owner2 = new Employee("Erik", "Royal", 58, calendar.getTime(), "555-22-1111", 34, "Cousil");
 
         Property commercialProperty = new Commercial(city.getAddresses()[0], owner1, 33344.3f, 56, false, vehiclesList1);
         Property residentialProperty = new Residential(city.getAddresses()[1], owner2, 345.1f, 3, true);
@@ -89,8 +90,9 @@ public class TownHallTest {
 
             Property foundProperty = null;
             // Invoke findProperty method based on last name input by user.
+
             try {
-                foundProperty = findProperty(lastName, properties);
+                foundProperty = findProp(lastName, properties);
 
                 if (foundProperty instanceof Residential) {
                     taxesOwed = foundProperty.calculateTaxes(foundProperty,
@@ -139,6 +141,17 @@ public class TownHallTest {
         }
     }
 
+    // Implemented Streams and Lambdas
+    public static Property findProp(String lastName, ArrayList<Property>  properties) throws  PropertyFoundNullException{
+        Stream<Property> propertyStream = properties.stream();
+        Property foundProperty = propertyStream.filter(property -> property.getOwner().getLastName().equals(lastName)).findFirst().get();
+        if(foundProperty != null){
+            return foundProperty;
+        }else {
+            throw new PropertyFoundNullException("Prop not found");
+        }
+    }
+
     // Method to find property and calculate taxes based on type of property and taxes associated.
     public static Property findProperty(String lastName, ArrayList<Property> properties) throws PropertyFoundNullException {
         Property foundProperty = null;
@@ -155,14 +168,14 @@ public class TownHallTest {
         }else{
             throw new PropertyFoundNullException("Property is NULL.");
         }
-
     }
+
 
     private static ArrayList<Address> createAddresses() {
         ArrayList<Address> addresses = new ArrayList<>();
-        addresses.add(new Address(5104, "Nagle Ave", "Sherman Oaks", "CA", "91423"));
-        addresses.add(new Address(5555, "Nazca", "Vicente Lopez", "Bs As", "ATY 223 ER"));
-        addresses.add(new Address(4321, "Cuba", "CABA", "Bs As", "AEH1428"));
+        addresses.add(new Address(4000, "Nagle", "Sherman Oaks", "CA", "91423"));
+        addresses.add(new Address(5555, "Otsego", "Valley Village", "CA", "91654"));
+        addresses.add(new Address(4321, "Cuba", "Culver City", "CA", "91428"));
         return addresses;
     }
 
@@ -171,44 +184,8 @@ public class TownHallTest {
         LinkedHashSet<Tax> taxes = new LinkedHashSet<>();
         TownHallTest residentialTax = new TownHallTest(Taxes.RESIDENTIAL);
         TownHallTest commercialTax = new TownHallTest(Taxes.COMMERCIAL);
-//        taxes.add(new ResidentialTax(2f, 1.4f, true, 0.78f, 0.1f));
-//        taxes.add(new CommercialTax(2f, 1, false, 0.2f, 3.4f, 1.2f));
         return taxes;
     }
 }
 
 
-//// Printing out the creation of generics list.
-//        logger.debug("Created debug list to show generics with Lists" + MyGenericClass.class);
-//        System.out.println("Printing list of Strings and Integers of generic created class " + MyGenericClass.class);
-//
-//        // Added Strings to list
-//        listsOfStrings.add("Moses");
-//        listsOfStrings.add("Alan");
-//        listsOfStrings.add("Jose");
-//        listsOfStrings.add("Eric");
-//        listsOfStrings.add("Pia");
-//        // Printing list of Strings
-//        System.out.println(listsOfStrings);
-//
-//        // Added Integers to list
-//        listOfInts.add(101);
-//        listOfInts.add(102);
-//        listOfInts.add(103);
-//        listOfInts.add(104);
-//        listOfInts.add(105);
-//        // Printing list of ints
-//        System.out.println(listOfInts);
-//
-//        // Printing out the creation of generics with Key Value pairs.
-//        logger.info("Printing Key/Value pairs with generics classes" + TownHallTest.class);
-//        System.out.println(genericClass21.getK() + "\t" + genericClass21.getV());
-//        System.out.println(genericClass22.getK() + "\t" + genericClass22.getV());
-//
-//        logger.debug("DEBUG from:  " + TownHallTest.class);
-////        logger.trace("[TRACE] We've just greeted the user!");
-////        logger.debug("[DEBUG] We've just greeted the user!");
-////        logger.info("[INFO] We've just greeted the user!");
-////        logger.warn("[WARN] We've just greeted the user!");
-////        logger.error("[ERROR] We've just greeted the user!");
-////        logger.fatal("[FATAL] We've just greeted the user!");

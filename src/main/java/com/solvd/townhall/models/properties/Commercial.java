@@ -1,5 +1,6 @@
 package com.solvd.townhall.models.properties;
 
+import com.solvd.townhall.enums.PropertyTypes;
 import com.solvd.townhall.enums.Taxes;
 import com.solvd.townhall.interfaces.IOwnerDetails;
 import com.solvd.townhall.interfaces.ITaxable;
@@ -22,6 +23,7 @@ public class Commercial extends Property implements ITaxable, IOwnerDetails {
         this.numOfRetailStores = numOfRetailStores;
         this.isMall = isMall;
         this.vehicleList = vehicleList;
+
     }
 
     public int getNumOfRetailStores() {
@@ -55,12 +57,11 @@ public class Commercial extends Property implements ITaxable, IOwnerDetails {
         Commercial commercial = (Commercial) property;
 
         if (commercial.vehicleList.size() > 2) {
-            result = commercial.getSquareMeters() * commercialTax.getProductionTax()
-                    + commercial.getSquareMeters() * commercialTax.getSewageTax()
-                    + commercial.getSquareMeters() * commercialTax.getUnionTax();
+            result = commercial.getSquareMeters() * commercialTax.getCityTax()
+                    + commercial.getSquareMeters() * commercialTax.getCountyTax();
         } else {
-            result = commercial.getNumOfRetailStores() * commercialTax.getProductionTax()
-                    + commercial.getSquareMeters() * commercialTax.getUnionTax();
+            result = commercial.getNumOfRetailStores() * commercialTax.getCountyTax()
+                    + commercial.getSquareMeters() * commercialTax.getCityTax();
         }
         property.setYearlyTaxes(result);
 
@@ -77,7 +78,7 @@ public class Commercial extends Property implements ITaxable, IOwnerDetails {
 
     @Override
     public void purchaseDate(Property property) {
-        System.out.println("Owner's SSN is: " +property.getOwner().getSSN() + " and his "
+        System.out.println("Owner's SSN is: " + property.getOwner().getSSN() + " and his "
                 + " DOB is: " + property.getOwner().getDOB());
     }
 }

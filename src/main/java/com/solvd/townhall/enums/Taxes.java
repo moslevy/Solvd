@@ -1,46 +1,29 @@
 package com.solvd.townhall.enums;
 
 public enum Taxes {
-    RESIDENTIAL(2, 1.7f), COMMERCIAL(4, 2.3f, 1);
+    RESIDENTIAL(4, 1.7f), COMMERCIAL(2, 3.6f), INDUSTRIAL (3, 1.2f);
 
-    private float schoolTax;
-    private float freewayTax;
+    private float countyTax;
+    private float cityTax;
 
-    private float sewageTax;
-    private float productionTax;
-    private float unionTax;
 
-    Taxes(float i, float v) {
-        this.schoolTax = i;
-        this.freewayTax = v;
+
+    Taxes(float countyTax, float cityTax) {
+        this.countyTax = countyTax;
+        this.cityTax = cityTax;
     }
 
-    Taxes(float i, float v, float z){
-        this.sewageTax = i;
-        this.productionTax = v;
-        this.unionTax = z;
-    }
     Taxes(){
 
     }
 
-    public float getSchoolTax() {
-        return schoolTax;
+    public float getCountyTax() {
+        return countyTax;
     }
 
-    public float getFreewayTax() {
-        return freewayTax;
+    public float getCityTax() {
+        return cityTax;
     }
 
-    public float getSewageTax() {
-        return sewageTax;
-    }
 
-    public float getProductionTax() {
-        return productionTax;
-    }
-
-    public float getUnionTax() {
-        return unionTax;
-    }
 }

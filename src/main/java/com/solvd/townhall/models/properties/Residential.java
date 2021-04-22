@@ -49,13 +49,13 @@ public class Residential extends Property implements ITaxable, IOwnerDetails {
         Residential residential = (Residential) property;
         Taxes residentialTax = tax;
         if(residential.hasSwimmingPool){
-            result = residential.getNumBedrooms()*residentialTax.RESIDENTIAL.getSchoolTax()
-                    +residential.getSquareMeters()*residentialTax.RESIDENTIAL.getFreewayTax()
-            +residential.getNumBedrooms()*residentialTax.RESIDENTIAL.getSchoolTax()*1000;
+            result = residential.getNumBedrooms()*residentialTax.RESIDENTIAL.getCountyTax()
+                    +residential.getSquareMeters()*residentialTax.RESIDENTIAL.getCityTax()
+            +residential.getNumBedrooms()*residentialTax.RESIDENTIAL.getCountyTax()*1000;
             residential.setYearlyTaxes(result);
         }else {
-            result = residential.getSquareMeters()*residentialTax.RESIDENTIAL.getFreewayTax()
-            +residential.getSquareMeters()*residentialTax.RESIDENTIAL.getProductionTax()*1000;
+            result = residential.getSquareMeters()*residentialTax.RESIDENTIAL.getCityTax()
+            +residential.getSquareMeters()*residentialTax.RESIDENTIAL.getCityTax()*1000;
             residential.setYearlyTaxes(result);
         }
 

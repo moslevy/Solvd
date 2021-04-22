@@ -1,6 +1,11 @@
 package com.solvd.townhall.models.people;
 
+import com.solvd.townhall.enums.PropertyTypes;
+import com.solvd.townhall.enums.Taxes;
+import com.solvd.townhall.models.City;
 import com.solvd.townhall.models.properties.Address;
+import com.solvd.townhall.models.properties.Property;
+import com.solvd.townhall.models.taxes.Tax;
 
 import java.util.Date;
 
@@ -9,7 +14,8 @@ public class Citizen extends Person {
     private Address address;
     private Date purchaseDate;
 
-    public Citizen(){}
+    public Citizen() {
+    }
 
     public Citizen(String firstName, String lastName, int age, Date DOB, String SSN, Address address, Date purchaseDate) {
         super(firstName, lastName, age, DOB, SSN);
@@ -46,4 +52,25 @@ public class Citizen extends Person {
     }
 
 
+    @Override
+    public float paymentDue(Property property) {
+        float taxesOwed;
+        switch (property.getPropertyType()) {
+
+            case SINGLE_FAMILY, MULTI_FAMILY -> {
+                taxesOwed = property.calculateTaxes(property, Taxes.RESIDENTIAL);
+            }
+
+            case COMMERCIAL, SHOPPING_MALL -> {
+                taxesOwed = property.calculateTaxes(property, Taxes.COMMERCIAL);
+            }
+
+            case INDUSTRIAL -> {
+                taxesOwed =  property.calculateTaxes(property, Taxes.INDUSTRIAL);
+            }
+
+            default -> throw new IllegalStateException("Unexpected value: " + property.getPropertyType());
+        }
+        return taxesOwed;
+    }
 }

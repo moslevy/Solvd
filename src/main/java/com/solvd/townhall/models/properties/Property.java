@@ -1,5 +1,6 @@
 package com.solvd.townhall.models.properties;
 
+import com.solvd.townhall.enums.PropertyTypes;
 import com.solvd.townhall.enums.Taxes;
 import com.solvd.townhall.models.people.Person;
 
@@ -9,8 +10,16 @@ public abstract class Property {
     private Person owner;
     private float squareMeters;
     private float yearlyTaxes;
+    private PropertyTypes propertyType;
 
     public Property() {
+    }
+
+    public Property(Address address, Person owner, float squareMeters, PropertyTypes propertyType) {
+        this.address = address;
+        this.owner = owner;
+        this.squareMeters = squareMeters;
+        this.propertyType =propertyType;
     }
 
     public Property(Address address, Person owner, float squareMeters) {
@@ -51,12 +60,22 @@ public abstract class Property {
         this.yearlyTaxes = yearlyTaxes;
     }
 
+    public PropertyTypes getPropertyType() {
+        return propertyType;
+    }
+
+    public void setPropertyType(PropertyTypes propertyType) {
+        this.propertyType = propertyType;
+    }
+
     @Override
     public String toString() {
         return "Property{" +
-                ", address=" + address +
+                "address=" + address +
+                ", owner=" + owner +
                 ", squareMeters=" + squareMeters +
                 ", yearlyTaxes=" + yearlyTaxes +
+                ", propertyTypes=" + propertyType +
                 '}';
     }
 

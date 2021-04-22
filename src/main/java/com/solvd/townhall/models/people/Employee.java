@@ -1,5 +1,9 @@
 package com.solvd.townhall.models.people;
 
+import com.solvd.townhall.enums.Taxes;
+import com.solvd.townhall.interfaces.ITaxable;
+import com.solvd.townhall.models.properties.Property;
+
 import java.util.Date;
 
 public class Employee extends Person {
@@ -33,5 +37,27 @@ public class Employee extends Person {
                 ", DOB=" + DOB +
                 ", SSN='" + SSN + '\'' +
                 '}';
+    }
+
+    @Override
+    public float paymentDue(Property property) {
+        float taxesOwed;
+        switch (property.getPropertyType()) {
+
+            case SINGLE_FAMILY, MULTI_FAMILY -> {
+                taxesOwed = property.calculateTaxes(property, Taxes.RESIDENTIAL);
+            }
+
+            case COMMERCIAL, SHOPPING_MALL -> {
+                taxesOwed = property.calculateTaxes(property, Taxes.COMMERCIAL);
+            }
+
+            case INDUSTRIAL -> {
+                taxesOwed =  property.calculateTaxes(property, Taxes.INDUSTRIAL);
+            }
+
+            default -> throw new IllegalStateException("Unexpected value: " + property.getPropertyType());
+        }
+        return taxesOwed;
     }
 }

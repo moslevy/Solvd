@@ -1,8 +1,10 @@
 package com.solvd.townhall.models.people;
 
+import com.solvd.townhall.interfaces.Payable;
+
 import java.util.Date;
 
-public abstract class Person {
+public abstract class Person implements Payable {
 
     String firstName;
     String lastName;

@@ -4,7 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26bbef8c-e474-4bf7-9559-0fee44f7fba2" name="Default Changelist" comment="updated and cleaned files." />
+    <list default="true" id="26bbef8c-e474-4bf7-9559-0fee44f7fba2" name="Default Changelist" comment="Added pending homeworks to stay up to date with Andrew's group.">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/connectionPool/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/connectionPool/ConnectionPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/connectionPool/ConnectionsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/connectionPool/MyRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/enums/PropertyTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/enums/Vehicles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/fileProcess/TextProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/generics/TaxesOwed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/interfaces/Payable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/lists/LinkedList/DoublyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/lists/LinkedList/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/lists/LinkedList/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/lists/LinkedList/SinglyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/reflection/ReflectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/reflection/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/wordCountResults" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_8_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_8_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solvd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TownHall.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solvd.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/status.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/status.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/TownHallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/TownHallTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/enums/Taxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/enums/Taxes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/generics/MyGenericClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/generics/GenericList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/generics/MyGenericClass2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/lists/LinkedList/SinglyLinkedListClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/people/Citizen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/people/Citizen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/people/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/people/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/people/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/people/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/properties/Commercial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/properties/Commercial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/properties/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/properties/Property.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/properties/Residential.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/properties/Residential.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/taxes/ResidentialTax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/taxes/ResidentialTax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/TownHallTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhall/TownHallTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/classcreation/ClassCreation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/enums/Taxes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhall/enums/Taxes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/filereader/WordCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/generics/MyGenericClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/generics/MyGenericClass2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/lists/LinkedList/LinkedListClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/lists/LinkedList/SinglyLinkedListClass$ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/lists/LinkedList/SinglyLinkedListClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/people/Citizen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/people/Citizen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/people/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/people/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/people/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/people/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/properties/Commercial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/properties/Commercial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/properties/Property.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/properties/Property.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/properties/Residential.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/properties/Residential.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +70,7 @@
         <option value="UML Object" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -53,10 +108,10 @@
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/example/hw5" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Groovy" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -81,13 +136,52 @@
       <recent name="com.example.hw1.methodsoverriding" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TownHallTest (1)">
-    <configuration name="SinglyLinkedListClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.hw4.lists.LinkedList.SinglyLinkedListClass" />
-      <module name="Solvd" />
+  <component name="RunManager" selected="Application.ReflectionTest">
+    <configuration name="ConnectionsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.solvd.townhall.connectionPool.ConnectionsTest" />
+      <module name="TownHall" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.townhall.lists.LinkedList.*" />
+          <option name="PATTERN" value="com.solvd.townhall.connectionPool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReflectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.solvd.townhall.reflection.ReflectionTest" />
+      <module name="TownHall" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.townhall.reflection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SinglyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.solvd.townhall.lists.LinkedList.SinglyLinkedList" />
+      <module name="TownHall" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.townhall.lists.LinkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SinglyLinkedListClass (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.solvd.townhall.lists.LinkedList.SinglyLinkedListClass" />
+      <module name="TownHall" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.townhall.lists.LinkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,7 +191,7 @@
     </configuration>
     <configuration name="TownHallTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.solvd.townhall.TownHallTest" />
-      <module name="Solvd" />
+      <module name="TownHall" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.solvd.townhall.*" />
@@ -108,65 +202,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TownHallTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.hw3.townhallinterfaces.TownHallTest" />
-      <module name="Solvd" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.hw3.townhallinterfaces.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TownHallTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.townhall.TownHallTest" />
-      <module name="Solvd" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.townhall.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TreeSetClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.hw4.lists.TreeSet.TreeSetClass" />
-      <module name="Solvd" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.townhall.lists.TreeSet.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.hw4.filereader.WordCount" />
-      <module name="Solvd" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.townhall.filereader.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReflectionTest" />
+        <item itemvalue="Application.SinglyLinkedList" />
+        <item itemvalue="Application.SinglyLinkedListClass (1)" />
         <item itemvalue="Application.TownHallTest (1)" />
-        <item itemvalue="Application.TownHallTest (1)" />
-        <item itemvalue="Application.SinglyLinkedListClass" />
-        <item itemvalue="Application.TownHallTest" />
-        <item itemvalue="Application.WordCount" />
+        <item itemvalue="Application.ConnectionsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -298,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618916018570</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Cleaned code.">
+      <created>1618916478516</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1618916478516</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -331,15 +380,23 @@
     <MESSAGE value="hw 4 and 5." />
     <MESSAGE value="Implemented Exceptions." />
     <MESSAGE value="updated and cleaned files." />
-    <option name="LAST_COMMIT_MESSAGE" value="updated and cleaned files." />
+    <MESSAGE value="Cleaned code." />
+    <MESSAGE value="Added homeworks to stay upto date with Andrew's group." />
+    <MESSAGE value="Added pending homeworks to stay up to date with Andrew's group." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added pending homeworks to stay up to date with Andrew's group." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/properties/Property.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/solvd/townhall/connectionPool/MyRunnable.java</url>
           <line>17</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/solvd/townhall/connectionPool/ConnectionsTest.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
