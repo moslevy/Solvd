@@ -207,3 +207,18 @@
 2021-04-22 06:50:54,168 [main] FATAL com.solvd.townhall.TownHallTest - PROPERTY NOT FOUND!!! PLEASE TRY AGAIN
 2021-04-22 06:50:54,169 [main] ERROR com.solvd.townhall.TownHallTest - Passed an error on purpose to show exception in console
 2021-04-22 06:50:54,173 [main] INFO  com.solvd.townhall.TownHallTest - Full taxes Report class com.solvd.townhall.generics.Report
+2021-04-23 06:36:38,021 [1] INFO  java.lang.Thread - Thread 1 got the connection 2
+2021-04-23 06:36:38,025 [0] INFO  java.lang.Thread - Thread 0 got the connection 0
+2021-04-23 06:36:38,023 [3] INFO  java.lang.Thread - Thread 3 got the connection 3
+2021-04-23 06:36:38,024 [4] INFO  java.lang.Thread - Thread 4 got the connection 1
+2021-04-23 06:36:38,022 [5] INFO  java.lang.Thread - Thread 5 got the connection 4
+2021-04-23 06:36:38,033 [main] INFO  com.solvd.townhall.connectionPool.ConnectionsTest - Completable future 1
+2021-04-23 06:36:38,034 [main] INFO  com.solvd.townhall.connectionPool.ConnectionsTest - Completable future 2
+2021-04-23 06:36:38,035 [main] INFO  com.solvd.townhall.connectionPool.ConnectionsTest - Completable future 3
+2021-04-23 06:36:40,035 [1] INFO  java.lang.Thread - Thread 1 returned the connection 2 to the connection pool and finished.
+2021-04-23 06:36:40,036 [4] INFO  java.lang.Thread - Thread 4 returned the connection 1 to the connection pool and finished.
+2021-04-23 06:36:40,035 [2] INFO  java.lang.Thread - Thread 2 got the connection 0
+2021-04-23 06:36:40,036 [0] INFO  java.lang.Thread - Thread 0 returned the connection 0 to the connection pool and finished.
+2021-04-23 06:36:40,036 [5] INFO  java.lang.Thread - Thread 5 returned the connection 4 to the connection pool and finished.
+2021-04-23 06:36:40,036 [3] INFO  java.lang.Thread - Thread 3 returned the connection 3 to the connection pool and finished.
+2021-04-23 06:36:42,042 [2] INFO  java.lang.Thread - Thread 2 returned the connection 0 to the connection pool and finished.
