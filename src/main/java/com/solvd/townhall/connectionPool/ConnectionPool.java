@@ -23,6 +23,16 @@ public class ConnectionPool {
         return singleInstance;
     }
 
+
+    public static ConnectionPool getInstance(){
+        if(singleInstance == null){
+            singleInstance = new ConnectionPool(3);
+        }
+        return singleInstance;
+    }
+
+
+
     public Connection getConnection() throws InterruptedException {
         synchronized (this){ //because of shared fields
             if (connections.size() == 0 && connectionsCount < maxSize){ //there's no available conn and don't pass the max

@@ -1,4 +1,4 @@
-package com.solvd.townhall.dao.interfaces;
+package com.solvd.townhalldb.dao.interfaces;
 
 public interface IEntityDAO <T>{
     public void save(T entity);
