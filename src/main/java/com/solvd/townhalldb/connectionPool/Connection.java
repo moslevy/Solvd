@@ -1,4 +1,4 @@
-package com.solvd.townhall.connectionPool;
+package com.solvd.townhalldb.connectionPool;
 
 public class Connection implements Comparable<Connection> {
 

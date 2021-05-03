@@ -1,4 +1,4 @@
-package com.solvd.townhall.connectionPool;
+package com.solvd.townhalldb.connectionPool;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -5,8 +5,8 @@ import java.sql.*;
 public class MySQLConnectionTest {
     public static void main(String[] args) {
 
-        var url = "jdbc:sqlserver://localhost:1433/townhalldb?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
-
+        var url = "jdbc:sqlserver://localhost:1433/townhalldb";
+//?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
         try {
 
 //          Class.forName("com.mysql.jdbc.Driver");
