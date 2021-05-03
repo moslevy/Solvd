@@ -2,6 +2,7 @@ package com.solvd.townhalldb.domains.buildings;
 
 import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
 import com.solvd.townhalldb.domains.misc.City;
+import com.solvd.townhalldb.domains.persons.Citizen;
 
 public class Property extends BaseDTO {
     private int street_number;
@@ -9,6 +10,7 @@ public class Property extends BaseDTO {
     private String apartment_number;
     private String owner;
     private City city;
+    private Citizen citizen;
 
 
     public Property(long id, int street_number, String street_address, String apartment_number, String owner) {
@@ -60,5 +62,13 @@ public class Property extends BaseDTO {
 
     public void setCity(City city) {
         this.city = city;
+    }
+
+    public Citizen getCitizen() {
+        return citizen;
+    }
+
+    public void setCitizen(Citizen citizen) {
+        this.citizen = citizen;
     }
 }
