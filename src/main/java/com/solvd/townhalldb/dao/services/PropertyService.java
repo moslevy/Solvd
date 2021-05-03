@@ -19,7 +19,6 @@ public class PropertyService extends AbstractJdbcDao {
         Citizen citizen = citizenDAO.getById(property.getCitizen().getId());
         property.setCitizen(citizen);
 
-
         return property;
     }
 }

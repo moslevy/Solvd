@@ -186,6 +186,8 @@ public class TownHallTest {
         TownHallTest commercialTax = new TownHallTest(Taxes.COMMERCIAL);
         return taxes;
     }
+
+
 }
 
 

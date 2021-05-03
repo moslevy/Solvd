@@ -2,7 +2,6 @@ package com.solvd.townhalldb.dao.jdbc.impl.vehicles;
 
 import com.solvd.townhalldb.dao.abstractClasses.AbstractJdbcDao;
 import com.solvd.townhalldb.dao.interfaces.vehicles.ILicenseDAO;
-import com.solvd.townhalldb.dao.jdbc.impl.misc.TelephoneDAO;
 import com.solvd.townhalldb.domains.vehicles.License;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,18 +18,18 @@ public class LicenseDAO extends AbstractJdbcDao implements ILicenseDAO {
     private final static String SQL_DELETE = "DELETE FROM Licenses WHERE id = ?";
 
     @Override
-    public void save(License lincense) throws SQLException {
+    public void save(License license) throws SQLException {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
         try {
             c = (Connection) getCp().getConnection();
             ps = c.prepareStatement(SQL_INSERT);
-            ps.setInt(1, lincense.getNumber());
-            ps.setDate(2, (Date) lincense.getExp_date());
+            ps.setInt(1, license.getNumber());
+            ps.setDate(2, (Date) license.getExp_date());
             rs = ps.executeQuery();
             rs.next();
-            logger.info("Saved License: " + lincense.getNumber() + " in db");
+            logger.info("Saved License: " + license.getNumber() + " in db");
 
         } catch (InterruptedException | SQLException sqlException) {
             sqlException.printStackTrace();
