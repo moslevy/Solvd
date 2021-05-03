@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26bbef8c-e474-4bf7-9559-0fee44f7fba2" name="Default Changelist" comment="Almost finishing DAOs.">
+    <list default="true" id="26bbef8c-e474-4bf7-9559-0fee44f7fba2" name="Default Changelist" comment="Modified Services">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/vehicles/SmogCheckDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/vehicles/SmogCheckDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/services/PropertyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/services/PropertyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/utils/XMLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/utils/XMLParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/domains/buildings/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/domains/buildings/Property.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/AgregationQueries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/AgregationQueries.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620008292055</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Modified Services">
+      <created>1620034975244</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1620034975244</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -362,7 +366,8 @@
     <MESSAGE value="Added dao packages." />
     <MESSAGE value="Completed creation of DAOs and DTOs files." />
     <MESSAGE value="Almost finishing DAOs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost finishing DAOs." />
+    <MESSAGE value="Modified Services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified Services" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
