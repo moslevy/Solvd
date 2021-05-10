@@ -2,10 +2,9 @@ package com.solvd.townhalldb.dao.jdbc.impl.vehicles;
 
 import com.solvd.townhalldb.dao.abstractClasses.AbstractJdbcDao;
 import com.solvd.townhalldb.dao.interfaces.vehicles.ISmogCheckOrderDAO;
-import com.solvd.townhalldb.domains.vehicles.License;
-import com.solvd.townhalldb.domains.vehicles.SmogCheck;
-import com.solvd.townhalldb.domains.vehicles.SmogCheckOrder;
-import com.solvd.townhalldb.domains.vehicles.Vehicle;
+import com.solvd.townhalldb.jaxb.models.vehicles.SmogCheck;
+import com.solvd.townhalldb.jaxb.models.vehicles.SmogCheckOrder;
+import com.solvd.townhalldb.jaxb.models.vehicles.Vehicle;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

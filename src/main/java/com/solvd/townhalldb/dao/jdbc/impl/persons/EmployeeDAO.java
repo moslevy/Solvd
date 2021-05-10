@@ -2,7 +2,7 @@ package com.solvd.townhalldb.dao.jdbc.impl.persons;
 
 import com.solvd.townhalldb.dao.abstractClasses.AbstractJdbcDao;
 import com.solvd.townhalldb.dao.interfaces.persons.IEmployeeDAO;
-import com.solvd.townhalldb.domains.persons.Employee;
+import com.solvd.townhalldb.jaxb.models.persons.Employee;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -9,26 +9,44 @@ WHERE t.amount > 1000
 GROUP BY tb.exp_date
 
 -- Sum total property taxes owned in the state of California.
-
-SELECT SUM as 'Property Taxes owned in California' (amount)
+SELECT SUM(amount) as 'Total amount of taxes by State'
 FROM Taxes AS t
-WHERE t.id > 100
-RIGHT JOIN Tax_Bills as tb
-ON tb.id = t.id
-RIGHT JOIN Properties as p
+INNER JOIN Tax_Bills as tb
+ON t.id = tb.id
+INNER JOIN Properties as p
 ON p.id = tb.id
-RIGHT JOIN Cities as c
+INNER JOIN Cities as c
 ON c.id = p.id
-RIGHT JOIN State as st
+Right JOIN States as st
 ON st.id = c.id
-GROUP BY st.id
-WHERE st.name = 'CA'
+Group By st.stateCode = 'FL'
 
 
--- Count the amount of cities found in the state of Florida.
-SELECT COUNT as 'Number of cities in the state of Florida' (name) FROM Cities AS c
-INNER JOIN States AS st
-ON st.id = c.id
-WHERE st.name = 'FL'
+-- Count the amount of cities per State.
+SELECT c.stateCode as 'Number of Cities per State', COUNT(*)
+FROM Cities as c
+Group by c.stateCode
 
+-- Average of Taxes paid by citizens with id = 3
+SELECT Avg(amount) AS 'Average taxes paid by Citizen with id = 3', p.owner as 'Owner'
+from Taxes as t
+INNER JOIN Tax_Bills as tb
+ON t.id = tb.id
+Inner Join Properties as p
+On tb.id = p.id
+Inner Join Citizens as c
+On p.id = c.id
+Where c.id = 3
 
+-- Max amount of taxes paid by citizens that live in California.
+SELECT MAX(amount) AS 'Maximum taxes paid by Floridan citizens'
+from Taxes as t
+INNER JOIN Tax_Bills as tb
+ON t.id = tb.id
+Inner Join Properties as p
+On tb.id = p.id
+Inner Join Cities as c
+On p.id = c.id
+Inner Join States as st
+on c.id = st.id
+Where st.stateName = 'FL'

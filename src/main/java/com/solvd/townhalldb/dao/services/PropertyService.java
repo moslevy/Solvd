@@ -1,12 +1,10 @@
 package com.solvd.townhalldb.dao.services;
 
 import com.solvd.townhalldb.dao.abstractClasses.AbstractJdbcDao;
-import com.solvd.townhalldb.dao.jdbc.impl.misc.CityDAO;
 import com.solvd.townhalldb.dao.jdbc.impl.buildings.PropertyDAO;
 import com.solvd.townhalldb.dao.jdbc.impl.persons.CitizenDAO;
-import com.solvd.townhalldb.domains.misc.City;
-import com.solvd.townhalldb.domains.buildings.Property;
-import com.solvd.townhalldb.domains.persons.Citizen;
+import com.solvd.townhalldb.jaxb.models.buildings.Property;
+import com.solvd.townhalldb.jaxb.models.persons.Citizen;
 
 import java.sql.SQLException;
 

@@ -2,9 +2,7 @@ package com.solvd.townhalldb.dao.jdbc.impl.misc;
 
 import com.solvd.townhalldb.dao.abstractClasses.AbstractJdbcDao;
 import com.solvd.townhalldb.dao.interfaces.misc.IStateDAO;
-import com.solvd.townhalldb.dao.jdbc.impl.buildings.TownHallDAO;
-import com.solvd.townhalldb.domains.misc.City;
-import com.solvd.townhalldb.domains.misc.State;
+import com.solvd.townhalldb.jaxb.models.misc.State;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

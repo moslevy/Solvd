@@ -2,7 +2,7 @@ package com.solvd.townhalldb.dao.jdbc.impl.buildings;
 
 import com.solvd.townhalldb.dao.abstractClasses.AbstractJdbcDao;
 import com.solvd.townhalldb.dao.interfaces.buildings.ITypeOfPropertyDAO;
-import com.solvd.townhalldb.domains.buildings.TypeOfProperty;
+import com.solvd.townhalldb.jaxb.models.buildings.TypeOfProperty;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
