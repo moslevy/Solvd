@@ -4,12 +4,22 @@ import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
 import com.solvd.townhalldb.domains.misc.City;
 import com.solvd.townhalldb.domains.persons.Citizen;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Property extends BaseDTO {
+    @XmlElement(name = "street_number")
     private int street_number;
+    @XmlElement(name = "stree_address")
     private String street_address;
+    @XmlElement(name = "apartment_number")
     private String apartment_number;
+    @XmlElement(name = "owner")
     private String owner;
+    @XmlElement(name = "city")
     private City city;
+    @XmlElement(name = "citizen")
     private Citizen citizen;
 
 

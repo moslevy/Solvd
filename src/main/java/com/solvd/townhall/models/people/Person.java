@@ -74,4 +74,28 @@ public abstract class Person implements Payable {
                 ", SSN='" + SSN + '\'' +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Person person = (Person) o;
+
+        if (age != person.age) return false;
+        if (firstName != null ? !firstName.equals(person.firstName) : person.firstName != null) return false;
+        if (lastName != null ? !lastName.equals(person.lastName) : person.lastName != null) return false;
+        if (DOB != null ? !DOB.equals(person.DOB) : person.DOB != null) return false;
+        return SSN != null ? SSN.equals(person.SSN) : person.SSN == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = firstName != null ? firstName.hashCode() : 0;
+        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
+        result = 31 * result + age;
+        result = 31 * result + (DOB != null ? DOB.hashCode() : 0);
+        result = 31 * result + (SSN != null ? SSN.hashCode() : 0);
+        return result;
+    }
 }

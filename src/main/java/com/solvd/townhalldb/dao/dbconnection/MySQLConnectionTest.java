@@ -5,12 +5,12 @@ import java.sql.*;
 public class MySQLConnectionTest {
     public static void main(String[] args) {
 
-        var url = "jdbc:sqlserver://localhost:1433/townhalldb";
-//?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
+//      var url = "jdbc:mysql://localhost:1433/townhalldb?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
+        var url = "jdbc:mysql://localhost:3306/mydb";
         try {
 
 //          Class.forName("com.mysql.jdbc.Driver");
-            Connection connection = DriverManager.getConnection(url, "sa", "solvd1234");
+            Connection connection = DriverManager.getConnection(url, "root", "solvd1234");
 
             Statement statement = connection.createStatement();
 

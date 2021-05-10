@@ -3,10 +3,18 @@ package com.solvd.townhalldb.domains.persons;
 import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
 import com.solvd.townhalldb.domains.vehicles.License;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Citizen extends BaseDTO {
+    @XmlElement(name = "first_name")
     private String first_name;
+    @XmlElement(name = "last_name")
     private String last_name;
+    @XmlElement(name = "ssn")
     private String ssn;
+    @XmlElement(name = "license")
     private License license;
 
     public Citizen(long id, String name, String last_name, String ssn) {

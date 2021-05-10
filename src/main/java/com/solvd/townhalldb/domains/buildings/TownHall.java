@@ -2,7 +2,12 @@ package com.solvd.townhalldb.domains.buildings;
 
 import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class TownHall extends BaseDTO {
+    @XmlElement(name = "county")
     private String county;
 
     public TownHall(){}

@@ -35,8 +35,6 @@ public class XMLParser {
                 }
             }
 
-
-
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
         } catch (IOException e) {

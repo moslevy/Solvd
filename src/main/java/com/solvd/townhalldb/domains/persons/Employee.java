@@ -1,14 +1,26 @@
 package com.solvd.townhalldb.domains.persons;
 
 import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
+import com.solvd.townhalldb.domains.adapters.DateAdapter;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.Date;
 
+@XmlRootElement
 public class Employee extends BaseDTO {
+    @XmlElement(name = "first_name")
     private String first_name;
+    @XmlElement(name = "last_name")
     private String last_name;
+    @XmlElement(name = "ssn")
     private String ssn;
+    @XmlElement(name = "dob")
+    @XmlJavaTypeAdapter(DateAdapter.class)
     private Date dob;
+    @XmlElement(name = "start_date")
+    @XmlJavaTypeAdapter(DateAdapter.class)
     private Date start_date;
 
     public Employee(long id, String first_name, String last_name, String ssn, Date dob, Date start_date) {

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="src/main/resources/parsers" >
+
+    <first_name>John</first_name>
+    <last_name>Doe</last_name>
+    <ssn>555-33-2222</ssn>
+    <dob>03/12/1989</dob>
+    <start_date>05/03/2021</start_date>
+
+</employee>

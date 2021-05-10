@@ -8,6 +8,7 @@ import com.solvd.townhall.models.properties.Property;
 import com.solvd.townhall.models.taxes.Tax;
 
 import java.util.Date;
+import java.util.Objects;
 
 public class Citizen extends Person {
 
@@ -51,6 +52,25 @@ public class Citizen extends Person {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+
+        Citizen citizen = (Citizen) o;
+
+        if (address != null ? !address.equals(citizen.address) : citizen.address != null) return false;
+        return purchaseDate != null ? purchaseDate.equals(citizen.purchaseDate) : citizen.purchaseDate == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + (address != null ? address.hashCode() : 0);
+        result = 31 * result + (purchaseDate != null ? purchaseDate.hashCode() : 0);
+        return result;
+    }
 
     @Override
     public float paymentDue(Property property) {

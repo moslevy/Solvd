@@ -40,6 +40,26 @@ public class Employee extends Person {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+
+        Employee employee = (Employee) o;
+
+        if (employeeId != employee.employeeId) return false;
+        return position != null ? position.equals(employee.position) : employee.position == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + employeeId;
+        result = 31 * result + (position != null ? position.hashCode() : 0);
+        return result;
+    }
+
+    @Override
     public float paymentDue(Property property) {
         float taxesOwed;
         switch (property.getPropertyType()) {
