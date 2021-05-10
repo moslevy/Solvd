@@ -4,49 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26bbef8c-e474-4bf7-9559-0fee44f7fba2" name="Default Changelist" comment="Finished DAOs.">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/utils/JaxbParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/domains/adapters/DateAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/parsers/jaxb/employee.xml" afterDir="false" />
+    <list default="true" id="26bbef8c-e474-4bf7-9559-0fee44f7fba2" name="Default Changelist" comment="Added some more table insertions.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solvd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Solvd.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/people/Citizen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/people/Citizen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/people/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/people/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/people/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhall/models/people/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/abstractClasses/BaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/abstractClasses/BaseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/dbconnection/MySQLConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/dbconnection/MySQLConnectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/services/CitizenService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/services/PropertyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/services/PropertyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/utils/XMLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/utils/XMLParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/domains/buildings/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/domains/buildings/Property.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/domains/buildings/TownHall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/domains/buildings/TownHall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/domains/misc/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/domains/misc/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/domains/persons/Citizen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/domains/persons/Citizen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/domains/persons/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/domains/persons/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parsers/Property.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parsers/dom/Property.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parsers/dbSchema.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parsers/dom/dbSchema.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parsers/employee.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parsers/dom/employee.xsd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/sql/TableInsertionQueries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/TableInsertionQueries.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/people/Citizen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/people/Citizen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/people/Citizen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/people/Citizen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/people/Employee$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/people/Employee$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/people/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/people/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/people/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhall/models/people/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/dbconnection/MySQLConnectionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/dbconnection/MySQLConnectionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/vehicles/LicenseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/vehicles/LicenseDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/vehicles/SmogCheckDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/vehicles/SmogCheckDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/vehicles/SmogCheckOrderDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/vehicles/SmogCheckOrderDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/vehicles/VehicleDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/vehicles/VehicleDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/services/CitizenService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/services/PropertyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/services/PropertyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/utils/XMLParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/utils/XMLParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/domains/vehicles/SmogCheckOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/domains/vehicles/SmogCheckOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/domains/vehicles/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/domains/vehicles/Vehicle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/AgregationQueries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sql/AgregationQueries.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/abstractClasses/BaseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/abstractClasses/BaseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/domains/buildings/Property.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/domains/buildings/Property.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/domains/buildings/TownHall.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/domains/buildings/TownHall.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/domains/misc/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/domains/misc/City.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/domains/persons/Citizen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/domains/persons/Citizen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/domains/persons/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/domains/persons/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parsers/Property.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parsers/dbSchema.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parsers/employee.xsd" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -388,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620066873924</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added some more table insertions.">
+      <created>1620640840675</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1620640840675</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -432,7 +408,8 @@
     <MESSAGE value="Finished SQL queries" />
     <MESSAGE value="SQL Queries" />
     <MESSAGE value="Finished DAOs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished DAOs." />
+    <MESSAGE value="Added some more table insertions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some more table insertions." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

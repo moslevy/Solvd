@@ -1,3 +1,24 @@
+INSERT INTO Tax_Bills (townHalls_id, properties_id)
+Values(1, 1),
+(1, 2),
+(1, 3),
+(1, 4),
+(1, 5)
+
+INSERT INTO Taxes (description, exp_date, amount, tax_bills_id)
+Values ('School Tax', '2021-10-09', 1890.87, 1),
+('County Tax', '2021-10-09', 10.55, 1),
+('City Tax', '2021-10-09', 90.22, 1),
+('State Tax', '2021-10-09', 490.11, 1),
+('School Tax', '2021-09-09', 1890.87, 2),
+('County Tax', '2021-09-09', 10.55, 2),
+('City Tax', '2021-09-09', 90.22, 2),
+('State Tax', '2021-09-09', 490.11, 2),
+('School Tax', '2021-11-01', 1890.87, 3),
+('County Tax', '2021-11-01', 10.55, 3),
+('City Tax', '2021-11-01', 90.22, 3),
+('State Tax', '2021-11-01', 490.11, 3)
+
 INSERT INTO Licenses (number, exp_date, dmvs_id)
 values(9023332, '2025-01-02', 1),
 (83229982, '2030-09-10', 2),
