@@ -19,7 +19,7 @@ INNER JOIN Cities as c
 ON c.id = p.id
 Right JOIN States as st
 ON st.id = c.id
-Group By st.stateCode = 'FL'
+Group By st.stateCode = 'CA'
 
 
 -- Count the amount of cities per State.
@@ -50,3 +50,8 @@ On p.id = c.id
 Inner Join States as st
 on c.id = st.id
 Where st.stateName = 'FL'
+
+-- Average
+SELECT Avg(amount) AS 'Average taxes due with expiration date after 2021-10-09'
+from Taxes as t
+Where t.exp_date > '2021-10-09'

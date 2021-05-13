@@ -2,9 +2,9 @@ package com.solvd.townhalldb.dao.jdbc.impl.vehicles;
 
 import com.solvd.townhalldb.dao.abstractClasses.AbstractJdbcDao;
 import com.solvd.townhalldb.dao.interfaces.vehicles.IVehicleDAO;
-import com.solvd.townhalldb.jaxb.models.buildings.Dmv;
-import com.solvd.townhalldb.jaxb.models.persons.Citizen;
-import com.solvd.townhalldb.jaxb.models.vehicles.Vehicle;
+import com.solvd.townhalldb.dao.models.buildings.Dmv;
+import com.solvd.townhalldb.dao.models.persons.Citizen;
+import com.solvd.townhalldb.dao.models.vehicles.Vehicle;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

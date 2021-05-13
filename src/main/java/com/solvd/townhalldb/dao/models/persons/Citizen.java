@@ -1,7 +1,7 @@
-package com.solvd.townhalldb.jaxb.models.persons;
+package com.solvd.townhalldb.dao.models.persons;
 
 import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
-import com.solvd.townhalldb.jaxb.models.vehicles.License;
+import com.solvd.townhalldb.dao.models.vehicles.License;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

@@ -1,4 +1,4 @@
-package com.solvd.townhalldb.jaxb.models.buildings;
+package com.solvd.townhalldb.dao.models.buildings;
 
 import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
 

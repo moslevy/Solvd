@@ -1,4 +1,4 @@
-package com.solvd.townhalldb.dao.utils;
+package com.solvd.townhalldb.utils;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

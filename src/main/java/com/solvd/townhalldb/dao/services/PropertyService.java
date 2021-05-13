@@ -3,8 +3,8 @@ package com.solvd.townhalldb.dao.services;
 import com.solvd.townhalldb.dao.abstractClasses.AbstractJdbcDao;
 import com.solvd.townhalldb.dao.jdbc.impl.buildings.PropertyDAO;
 import com.solvd.townhalldb.dao.jdbc.impl.persons.CitizenDAO;
-import com.solvd.townhalldb.jaxb.models.buildings.Property;
-import com.solvd.townhalldb.jaxb.models.persons.Citizen;
+import com.solvd.townhalldb.dao.models.buildings.Property;
+import com.solvd.townhalldb.dao.models.persons.Citizen;
 
 import java.sql.SQLException;
 

@@ -1,4 +1,4 @@
-package com.solvd.townhalldb.jaxb.models.abstractClasses;
+package com.solvd.townhalldb.dao.models.abstractClasses;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;

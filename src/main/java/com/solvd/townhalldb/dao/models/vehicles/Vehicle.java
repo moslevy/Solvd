@@ -1,8 +1,8 @@
-package com.solvd.townhalldb.jaxb.models.vehicles;
+package com.solvd.townhalldb.dao.models.vehicles;
 
 import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
-import com.solvd.townhalldb.jaxb.models.buildings.Dmv;
-import com.solvd.townhalldb.jaxb.models.persons.Citizen;
+import com.solvd.townhalldb.dao.models.buildings.Dmv;
+import com.solvd.townhalldb.dao.models.persons.Citizen;
 
 public class Vehicle extends BaseDTO {
     private String make;

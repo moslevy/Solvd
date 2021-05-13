@@ -2,7 +2,7 @@ package com.solvd.townhalldb.dao.jdbc.impl.buildings;
 
 import com.solvd.townhalldb.dao.abstractClasses.AbstractJdbcDao;
 import com.solvd.townhalldb.dao.interfaces.buildings.IDmvDAO;
-import com.solvd.townhalldb.jaxb.models.buildings.Dmv;
+import com.solvd.townhalldb.dao.models.buildings.Dmv;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

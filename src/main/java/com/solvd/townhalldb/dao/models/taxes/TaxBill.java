@@ -1,8 +1,8 @@
-package com.solvd.townhalldb.jaxb.models.taxes;
+package com.solvd.townhalldb.dao.models.taxes;
 
 import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
-import com.solvd.townhalldb.jaxb.models.buildings.Property;
-import com.solvd.townhalldb.jaxb.models.buildings.TownHall;
+import com.solvd.townhalldb.dao.models.buildings.Property;
+import com.solvd.townhalldb.dao.models.buildings.TownHall;
 
 public class TaxBill extends BaseDTO {
 

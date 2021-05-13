@@ -1,4 +1,4 @@
-package com.solvd.townhalldb.jaxb.models.adapters;
+package com.solvd.townhalldb.dao.models.adapters;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 import java.sql.Date;

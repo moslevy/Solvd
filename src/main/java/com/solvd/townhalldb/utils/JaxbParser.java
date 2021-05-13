@@ -1,7 +1,7 @@
-package com.solvd.townhalldb.dao.utils;
+package com.solvd.townhalldb.utils;
 
-import com.solvd.townhalldb.jaxb.models.buildings.TownHall;
-import com.solvd.townhalldb.jaxb.models.persons.Employee;
+import com.solvd.townhalldb.dao.models.buildings.TownHall;
+import com.solvd.townhalldb.dao.models.persons.Employee;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;

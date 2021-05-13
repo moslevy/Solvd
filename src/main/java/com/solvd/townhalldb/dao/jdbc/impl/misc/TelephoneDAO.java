@@ -2,8 +2,8 @@ package com.solvd.townhalldb.dao.jdbc.impl.misc;
 
 import com.solvd.townhalldb.dao.abstractClasses.AbstractJdbcDao;
 import com.solvd.townhalldb.dao.interfaces.misc.ITelephoneDAO;
-import com.solvd.townhalldb.jaxb.models.misc.Telephone;
-import com.solvd.townhalldb.jaxb.models.persons.Citizen;
+import com.solvd.townhalldb.dao.models.misc.Telephone;
+import com.solvd.townhalldb.dao.models.persons.Citizen;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

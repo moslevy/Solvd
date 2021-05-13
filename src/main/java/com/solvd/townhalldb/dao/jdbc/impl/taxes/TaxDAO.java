@@ -2,8 +2,8 @@ package com.solvd.townhalldb.dao.jdbc.impl.taxes;
 
 import com.solvd.townhalldb.dao.abstractClasses.AbstractJdbcDao;
 import com.solvd.townhalldb.dao.interfaces.taxes.ITaxDAO;
-import com.solvd.townhalldb.jaxb.models.taxes.Tax;
-import com.solvd.townhalldb.jaxb.models.taxes.TaxBill;
+import com.solvd.townhalldb.dao.models.taxes.Tax;
+import com.solvd.townhalldb.dao.models.taxes.TaxBill;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

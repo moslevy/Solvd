@@ -1,8 +1,8 @@
-package com.solvd.townhalldb.jaxb.models.buildings;
+package com.solvd.townhalldb.dao.models.buildings;
 
 import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
-import com.solvd.townhalldb.jaxb.models.misc.City;
-import com.solvd.townhalldb.jaxb.models.persons.Citizen;
+import com.solvd.townhalldb.dao.models.misc.City;
+import com.solvd.townhalldb.dao.models.persons.Citizen;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

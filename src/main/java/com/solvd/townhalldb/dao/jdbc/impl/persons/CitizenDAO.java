@@ -2,8 +2,8 @@ package com.solvd.townhalldb.dao.jdbc.impl.persons;
 
 import com.solvd.townhalldb.dao.abstractClasses.AbstractJdbcDao;
 import com.solvd.townhalldb.dao.interfaces.persons.ICitizenDAO;
-import com.solvd.townhalldb.jaxb.models.persons.Citizen;
-import com.solvd.townhalldb.jaxb.models.vehicles.License;
+import com.solvd.townhalldb.dao.models.persons.Citizen;
+import com.solvd.townhalldb.dao.models.vehicles.License;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -1,7 +1,7 @@
-package com.solvd.townhalldb.jaxb.models.misc;
+package com.solvd.townhalldb.dao.models.misc;
 
 import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
-import com.solvd.townhalldb.jaxb.models.persons.Citizen;
+import com.solvd.townhalldb.dao.models.persons.Citizen;
 
 public class Telephone extends BaseDTO {
     private String number;
