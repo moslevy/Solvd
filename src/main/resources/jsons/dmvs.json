@@ -1,0 +1,28 @@
+{
+  "dmvs": {
+    "dmv": [
+      {
+        "-id": "1",
+        "town": "Sherman Oaks",
+        "name": "Sh.Oaks.Dmv",
+        "time_open": "08:00",
+        "time_close": "17:00"
+      },
+      {
+        "-id": "2",
+        "town": "Reseda",
+        "name": "Re.Dmv",
+        "time_open": "08:00",
+        "time_close": "17:00"
+      },
+      {
+        "-id": "3",
+        "town": "Thousand Oaks",
+        "name": "Th.Oaks.Dmv",
+        "time_open": "08:00",
+        "time_close": "17:00"
+      }
+    ]
+  },
+  "#standalone": "yes"
+}

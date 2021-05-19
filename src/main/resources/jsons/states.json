@@ -1,0 +1,19 @@
+{
+  "states": {
+    "state": [
+      {
+        "-id": "1",
+        "name": "California"
+      },
+      {
+        "-id": "2",
+        "name": "Illinois"
+      },
+      {
+        "-id": "3",
+        "name": "Florida"
+      }
+    ]
+  },
+  "#standalone": "yes"
+}

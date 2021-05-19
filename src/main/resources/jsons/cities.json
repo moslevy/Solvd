@@ -1,0 +1,19 @@
+{
+  "cities": {
+    "city": [
+      {
+        "-id": "1",
+        "name": "Chicago"
+      },
+      {
+        "-id": "2",
+        "name": "Miami"
+      },
+      {
+        "-id": "3",
+        "name": "Los Angeles"
+      }
+    ]
+  },
+  "#standalone": "yes"
+}

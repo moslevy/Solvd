@@ -1,0 +1,35 @@
+{
+  "townhall": {
+    "-id": "1",
+    "county": "Los Angeles",
+    "employees": {
+      "employee": [
+        {
+          "-id": "1",
+          "first_name": "John",
+          "last_name": "Doe",
+          "ssn": "555-33-2222",
+          "dob": "03/12/1989",
+          "start_date": "05/03/2021"
+        },
+        {
+          "-id": "2",
+          "first_name": "Santiago",
+          "last_name": "Smith",
+          "ssn": "4444-22-1111",
+          "dob": "03/12/2000",
+          "start_date": "05/03/2021"
+        },
+        {
+          "-id": "3",
+          "first_name": "Alan",
+          "last_name": "Desantis",
+          "ssn": "2222-33-4444",
+          "dob": "03/11/1999",
+          "start_date": "05/04/2020"
+        }
+      ]
+    }
+  },
+  "#standalone": "yes"
+}

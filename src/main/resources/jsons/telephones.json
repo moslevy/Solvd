@@ -1,0 +1,39 @@
+{
+  "telephones": {
+    "telephone": [
+      {
+        "-id": "1",
+        "number": "444-3333",
+        "type": "cell",
+        "citizen": {
+          "-id": "1",
+          "first_name": "John",
+          "last_name": "Smith",
+          "ssn": "444-00-2222",
+          "license": {
+            "-id": "1",
+            "number": "123998734",
+            "exp_date": "09/09/2025"
+          }
+        }
+      },
+      {
+        "-id": "2",
+        "number": "444-5555",
+        "type": "home",
+        "citizen": {
+          "-id": "2",
+          "first_name": "Carol",
+          "last_name": "Jackson",
+          "ssn": "444-00-4444",
+          "license": {
+            "-id": "2",
+            "number": "98765442",
+            "exp_date": "01/10/2030"
+          }
+        }
+      }
+    ]
+  },
+  "#standalone": "yes"
+}

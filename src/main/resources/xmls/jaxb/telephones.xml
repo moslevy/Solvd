@@ -12,6 +12,7 @@
                 <exp_date>09/09/2025</exp_date>
             </license>
         </citizen>
+    </telephone>
     <telephone id="2">
         <number>444-5555</number>
         <type>home</type>
