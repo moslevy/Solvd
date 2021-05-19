@@ -1,7 +1,7 @@
-package com.solvd.townhalldb.dao.models.buildings;
+package com.solvd.townhalldb.jaxb.models.buildings;
 
 import com.solvd.townhalldb.dao.abstractClasses.AbstractEntity;
-import com.solvd.townhalldb.dao.models.persons.Employee;
+import com.solvd.townhalldb.jaxb.models.persons.Employee;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -17,8 +17,7 @@ public class TownHall extends AbstractEntity {
     @XmlElement(name = "employee")
     private List<Employee> employeeList = new ArrayList<>();
 
-    public TownHall() {
-    }
+    public TownHall(){}
 
     public TownHall(long id, String county) {
         super(id);

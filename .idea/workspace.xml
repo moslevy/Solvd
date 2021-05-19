@@ -4,14 +4,105 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26bbef8c-e474-4bf7-9559-0fee44f7fba2" name="Default Changelist" comment="Added Dao Services">
+    <list default="true" id="26bbef8c-e474-4bf7-9559-0fee44f7fba2" name="Default Changelist" comment="Modified jaxb files">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/abstractClasses/AbstractJdbcDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces/IEntityDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces/buildings/IDmvDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces/buildings/IPropertyDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces/buildings/ITownHallDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces/buildings/ITypeOfPropertyDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces/misc/ICityDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces/misc/IStateDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces/misc/ITelephoneDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces/persons/ICitizenDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces/persons/IEmployeeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces/taxes/ITaxBillDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces/taxes/ITaxDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces/vehicles/ILicenseDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces/vehicles/ISmogCheckDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces/vehicles/ISmogCheckOrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces/vehicles/IVehicleDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/jaxb/impl/buildings/DmvDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/jaxb/impl/buildings/PropertyDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/jaxb/impl/buildings/TownHallDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/jaxb/impl/misc/CityDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/jaxb/impl/misc/StateDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/jaxb/impl/persons/CitizenDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/jaxb/impl/persons/EmployeeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/jaxb/impl/taxes/TaxBillDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/jaxb/impl/taxes/TaxDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/jaxb/impl/vehicles/LicenseDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/jaxb/impl/vehicles/SmogCheckDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/jaxb/impl/vehicles/SmogCheckOrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/jaxb/impl/vehicles/VehicleDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/models/abstractClasses/AbstractEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/models/buildings/Dmv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/models/buildings/Property.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/models/buildings/TownHall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/models/buildings/TypeOfProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/models/misc/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/models/misc/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/models/misc/Telephone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/models/persons/Citizen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/models/persons/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/models/taxes/Tax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/models/taxes/TaxBill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/models/vehicles/License.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/models/vehicles/SmogCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/models/vehicles/SmogCheckOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/models/vehicles/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/services/PropertyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/services/TaxBillService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/services/TaxService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/services/TownHallService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/services/VehicleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/wrappers/buildings/Dmvs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/wrappers/buildings/Properties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/wrappers/buildings/TownHall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/wrappers/misc/Cities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/wrappers/misc/States.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/wrappers/misc/Telephones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/wrappers/persons/Citizens.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/wrappers/taxes/TaxBills.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/wrappers/taxes/Taxes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/wrappers/vehicles/Licenses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/wrappers/vehicles/SmogCheckOrders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/wrappers/vehicles/SmogChecks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/xmls/jaxb/cities.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/xmls/jaxb/citizens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/xmls/jaxb/dmvs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/xmls/jaxb/licenses.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/xmls/jaxb/properties.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/xmls/jaxb/smogcheckorders.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/xmls/jaxb/smogchecks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/xmls/jaxb/states.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/xmls/jaxb/taxbills.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/xmls/jaxb/taxes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/xmls/jaxb/telephones.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/xmls/jaxb/townhall.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/abstractClasses/BaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/abstractClasses/AbstractEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/adapters/DateAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/adapters/DateAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/dbconnection/MySQLConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/dbconnection/MySQLConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/buildings/TownHallDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/buildings/TownHallDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/adapters/DateAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/adapters/DateAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/buildings/TownHall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/buildings/TownHall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/persons/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/persons/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/models/abstractClasses/BaseDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/models/adapters/DateAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/models/adapters/DateAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/wrappers/abstractClasses/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/abstractClasses/AbstractEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/wrappers/adapters/DateAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/wrappers/persons/Employees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/wrappers/persons/Employees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/parsers/JaxBParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/parsers/JaxBParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/parsers/dom/Property.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xmls/dom/Property.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/parsers/dom/dbSchema.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xmls/dom/dbSchema.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/parsers/dom/employee.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xmls/dom/employee.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/parsers/jaxb/employees.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xmls/jaxb/employees.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/models/adapters/DateAdapter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/models/persons/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/models/persons/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/wrappers/abstractClasses/AbstractEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/wrappers/persons/Employees.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/wrappers/persons/Employees.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/parsers/JaxBParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/parsers/JaxBParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parsers/dom/Property.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parsers/dom/dbSchema.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parsers/dom/employee.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parsers/jaxb/employees.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +159,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/wrappers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -80,11 +171,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/wrappers" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/example/hw5" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/example/hw4" />
-      <recent name="$PROJECT_DIR$/src/com/example/hw3/townhall" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/services" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/jaxb/impl" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/wrappers" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/dao/interfaces" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/EERDiagram" />
@@ -407,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621392346603</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Modified jaxb files">
+      <created>1621396028525</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1621396028525</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -427,7 +525,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented Taxable interface with a assigned variable." />
     <MESSAGE value="Added another interface." />
     <MESSAGE value="Added another interface and renamed them." />
     <MESSAGE value="Fixed a string message." />
@@ -452,7 +549,8 @@
     <MESSAGE value="Added some more sql table insertions." />
     <MESSAGE value="Finished SQL Agregation Queries." />
     <MESSAGE value="Added Dao Services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Dao Services" />
+    <MESSAGE value="Modified jaxb files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified jaxb files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

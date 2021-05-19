@@ -1,7 +1,7 @@
-package com.solvd.townhalldb.dao.models.persons;
+package com.solvd.townhalldb.jaxb.models.persons;
 
-import com.solvd.townhalldb.dao.models.abstractClasses.AbstractEntity;
 import com.solvd.townhalldb.jaxb.adapters.DateAdapter;
+import com.solvd.townhalldb.jaxb.models.abstractClasses.AbstractEntity;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

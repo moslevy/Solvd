@@ -1,8 +1,7 @@
 package com.solvd.townhalldb.parsers;
 
 
-import com.solvd.townhalldb.dao.models.persons.Employee;
-import com.solvd.townhalldb.dao.wrappers.persons.Employees;
+import com.solvd.townhalldb.jaxb.wrappers.persons.Employees;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -19,8 +18,8 @@ public class JaxBParser {
         try {
             JAXBContext jaxbContext = JAXBContext.newInstance(Employees.class);
             Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-            Employee employee = (Employee) unmarshaller.unmarshal(new File("src/main/resources/parsers/jaxb/employees.xml"));
-            logger.info("Unmarshalled file dbSchema.xml utilizing JaxB " + employee.toString());
+            Employees employees = (Employees) unmarshaller.unmarshal(new File("src/main/resources/parsers/jaxb/employees.xml"));
+            logger.info("Unmarshalled file Employees.xml.");
         } catch (JAXBException e) {
             e.printStackTrace();
         }

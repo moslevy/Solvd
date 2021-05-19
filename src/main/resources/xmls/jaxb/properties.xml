@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<properties>
+    <property id="1">
+        <street_address>Alan</street_address>
+        <street_number>1234</street_number>
+        <apartment_number>74</apartment_number>
+        <owner>Joe</owner>
+    </property>
+    <property id="2">
+        <street_address>Warnes</street_address>
+        <street_number>4321</street_number>
+        <apartment_number>100</apartment_number>
+        <owner>Silvana</owner>
+    </property>
+</properties>

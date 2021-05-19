@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dmvs>
+    <dmv id="1">
+        <town>Sherman Oaks</town>
+        <name>Sh.Oaks.Dmv</name>
+        <time_open>08:00</time_open>
+        <time_close>17:00</time_close>
+    </dmv>
+    <dmv id="2">
+        <town>Reseda</town>
+        <name>Re.Dmv</name>
+        <time_open>08:00</time_open>
+        <time_close>17:00</time_close>
+    </dmv>
+    <dmv id="3">
+        <town>Thousand Oaks</town>
+        <name>Th.Oaks.Dmv</name>
+        <time_open>08:00</time_open>
+        <time_close>17:00</time_close>
+    </dmv>
+</dmvs>

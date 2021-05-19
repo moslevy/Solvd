@@ -2,7 +2,6 @@ package com.solvd.townhalldb.dao.jdbc.buildings;
 
 import com.solvd.townhalldb.dao.abstractClasses.AbstractJdbcDao;
 import com.solvd.townhalldb.dao.interfaces.buildings.ITownHallDAO;
-import com.solvd.townhalldb.dao.models.buildings.TownHall;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,13 +14,13 @@ public class TownHallDAO extends AbstractJdbcDao implements ITownHallDAO {
 
     private static final Logger logger = LogManager.getLogger(TownHallDAO.class);
 
-    private static final String SQL_INSERT = "INSERT INTO TownHalls (county) VALUES(?)";
-    private static final String SQL_UPDATE = "UPDATE TownHalls SET county=? WHERE id = ?";
-    private final static String SQL_GET_BY_ID = "SELECT * FROM TownHalls WHERE id = ?";
-    private final static String SQL_DELETE = "DELETE FROM TownHalls WHERE id = ?";
+    private static final String SQL_INSERT = "INSERT INTO TownHall (county) VALUES(?)";
+    private static final String SQL_UPDATE = "UPDATE TownHall SET county=? WHERE id = ?";
+    private final static String SQL_GET_BY_ID = "SELECT * FROM TownHall WHERE id = ?";
+    private final static String SQL_DELETE = "DELETE FROM TownHall WHERE id = ?";
 
     @Override
-    public void create(TownHall townHall) {
+    public void create(com.solvd.townhalldb.dao.models.buildings.TownHall townHall) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -41,7 +40,7 @@ public class TownHallDAO extends AbstractJdbcDao implements ITownHallDAO {
     }
 
     @Override
-    public void update(TownHall townHall) {
+    public void update(com.solvd.townhalldb.dao.models.buildings.TownHall townHall) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -61,11 +60,11 @@ public class TownHallDAO extends AbstractJdbcDao implements ITownHallDAO {
     }
 
     @Override
-    public TownHall getById(long id) {
+    public com.solvd.townhalldb.dao.models.buildings.TownHall getById(long id) {
         Connection c = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
-        TownHall townHall = new TownHall();
+        com.solvd.townhalldb.dao.models.buildings.TownHall townHall = new com.solvd.townhalldb.dao.models.buildings.TownHall();
 
         try {
             c = (Connection) getCp().getConnection();
@@ -86,7 +85,7 @@ public class TownHallDAO extends AbstractJdbcDao implements ITownHallDAO {
     }
 
     @Override
-    public void delete(TownHall townHall) {
+    public void delete(com.solvd.townhalldb.dao.models.buildings.TownHall townHall) {
         Connection c = null;
         PreparedStatement ps = null;
 

@@ -14,7 +14,7 @@ public class MySQLConnectionTest {
 
             Statement statement = connection.createStatement();
 
-            var sql = "SELECT id, county FROM TownHalls";
+            var sql = "SELECT id, county FROM TownHall";
 
             ResultSet resultSet = statement.executeQuery(sql);
 
