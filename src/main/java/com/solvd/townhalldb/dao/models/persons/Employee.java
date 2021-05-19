@@ -1,18 +1,17 @@
 package com.solvd.townhalldb.dao.models.persons;
 
-import com.solvd.townhalldb.dao.models.abstractClasses.BaseDTO;
+import com.solvd.townhalldb.dao.models.abstractClasses.AbstractEntity;
 import com.solvd.townhalldb.dao.models.adapters.DateAdapter;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.Date;
 import java.util.Objects;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Employee extends BaseDTO {
+public class Employee extends AbstractEntity {
     @XmlElement(name = "first_name")
     private String first_name;
     @XmlElement(name = "last_name")

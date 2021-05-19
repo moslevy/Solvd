@@ -4,7 +4,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public abstract class BaseDTO {
+public abstract class AbstractEntity {
     @XmlAttribute(name = "id")
     protected long id;
 
@@ -16,9 +16,9 @@ public abstract class BaseDTO {
         this.id = id;
     }
 
-    public BaseDTO(long id) {
+    public AbstractEntity(long id) {
         this.id = id;
     }
 
-    public BaseDTO(){}
+    public AbstractEntity(){}
 }

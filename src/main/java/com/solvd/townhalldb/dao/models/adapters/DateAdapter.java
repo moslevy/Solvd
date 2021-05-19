@@ -1,7 +1,7 @@
 package com.solvd.townhalldb.dao.models.adapters;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
-import java.sql.Date;
+import java.util.Date;
 import java.text.SimpleDateFormat;
 
 public class DateAdapter extends XmlAdapter<String, Date> {

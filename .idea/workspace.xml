@@ -4,107 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26bbef8c-e474-4bf7-9559-0fee44f7fba2" name="Default Changelist" comment="Finished SQL Agregation Queries.">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_3_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_core_3_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_3_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_3_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/services/TaxBillService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/services/TaxService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/services/TownHallService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/services/VehicleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/wrappers/abstractClasses/AbstractEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/wrappers/adapters/DateAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/wrappers/persons/Employees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/parsers/JaxBParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/parsers/jaxb/employees.xml" afterDir="false" />
+    <list default="true" id="26bbef8c-e474-4bf7-9559-0fee44f7fba2" name="Default Changelist" comment="Added Dao Services">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solvd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Solvd.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/status.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/status.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/abstractClasses/AbstractJdbcDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/abstractClasses/AbstractJdbcDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/abstractClasses/BaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/abstractClasses/AbstractEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/dbconnection/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/dbconnection/DbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/interfaces/IEntityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/interfaces/IEntityDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/buildings/DmvDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/buildings/DmvDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/buildings/PropertyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/buildings/PropertyDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/buildings/TownHallDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/buildings/TownHallDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/buildings/TypeOfPropertyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/buildings/TypeOfPropertyDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/misc/CityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/misc/CityDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/misc/StateDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/misc/StateDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/misc/TelephoneDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/misc/TelephoneDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/persons/CitizenDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/persons/CitizenDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/persons/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/persons/EmployeeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/taxes/TaxBillDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/taxes/TaxBillDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/taxes/TaxDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/taxes/TaxDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/vehicles/LicenseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/vehicles/LicenseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/vehicles/SmogCheckDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/vehicles/SmogCheckDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/vehicles/SmogCheckOrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/vehicles/SmogCheckOrderDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/vehicles/VehicleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/jdbc/impl/vehicles/VehicleDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/buildings/Dmv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/buildings/Dmv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/buildings/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/buildings/Property.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/buildings/TownHall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/buildings/TownHall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/buildings/TypeOfProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/buildings/TypeOfProperty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/misc/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/misc/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/misc/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/misc/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/misc/Telephone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/misc/Telephone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/persons/Citizen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/persons/Citizen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/abstractClasses/BaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/abstractClasses/AbstractEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/adapters/DateAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/adapters/DateAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/persons/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/persons/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/taxes/Tax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/taxes/Tax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/taxes/TaxBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/taxes/TaxBill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/vehicles/License.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/vehicles/License.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/vehicles/SmogCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/vehicles/SmogCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/vehicles/SmogCheckOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/vehicles/SmogCheckOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/vehicles/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/models/vehicles/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/services/PropertyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/dao/services/PropertyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jaxb/JaxBParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/utils/JaxbParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/utils/XMLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/parsers/XMLParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parsers/jaxb/employee.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/abstractClasses/AbstractJdbcDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/abstractClasses/AbstractJdbcDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/abstractClasses/BaseDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/dbconnection/DbConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/dbconnection/DbConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/IEntityDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/IEntityDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/buildings/IDmvDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/buildings/IDmvDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/buildings/IPropertyDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/buildings/IPropertyDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/buildings/ITownHallDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/buildings/ITownHallDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/buildings/ITypeOfPropertyDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/buildings/ITypeOfPropertyDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/misc/ICityDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/misc/ICityDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/misc/IStateDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/misc/IStateDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/misc/ITelephoneDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/misc/ITelephoneDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/persons/ICitizenDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/persons/ICitizenDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/persons/IEmployeeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/persons/IEmployeeDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/taxes/ITaxBillDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/taxes/ITaxBillDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/taxes/ITaxDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/taxes/ITaxDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/vehicles/ILicenseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/vehicles/ILicenseDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/vehicles/ISmogCheckDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/vehicles/ISmogCheckDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/vehicles/ISmogCheckOrderDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/vehicles/ISmogCheckOrderDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/vehicles/IVehicleDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/interfaces/vehicles/IVehicleDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/buildings/DmvDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/buildings/DmvDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/buildings/PropertyDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/buildings/PropertyDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/buildings/TownHallDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/buildings/TownHallDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/buildings/TypeOfPropertyDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/buildings/TypeOfPropertyDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/misc/CityDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/misc/CityDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/misc/StateDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/misc/StateDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/misc/TelephoneDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/misc/TelephoneDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/persons/CitizenDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/persons/CitizenDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/persons/EmployeeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/persons/EmployeeDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/taxes/TaxBillDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/taxes/TaxBillDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/taxes/TaxDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/taxes/TaxDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/vehicles/LicenseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/vehicles/LicenseDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/vehicles/SmogCheckDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/vehicles/SmogCheckDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/vehicles/SmogCheckOrderDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/vehicles/SmogCheckOrderDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/vehicles/VehicleDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/jdbc/impl/vehicles/VehicleDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/services/PropertyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/services/PropertyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/utils/XMLParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/AgregationQueries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sql/AgregationQueries.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/models/abstractClasses/BaseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/models/adapters/DateAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/models/adapters/DateAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/models/persons/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/townhalldb/dao/models/persons/Employee.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -486,7 +393,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620678556880</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Added Dao Services">
+      <created>1621392278960</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1621392278960</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Added Dao Services">
+      <created>1621392346603</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1621392346603</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -506,7 +427,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented Taxable interface." />
     <MESSAGE value="Implemented Taxable interface with a assigned variable." />
     <MESSAGE value="Added another interface." />
     <MESSAGE value="Added another interface and renamed them." />
@@ -531,7 +451,8 @@
     <MESSAGE value="Added some more table insertions." />
     <MESSAGE value="Added some more sql table insertions." />
     <MESSAGE value="Finished SQL Agregation Queries." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished SQL Agregation Queries." />
+    <MESSAGE value="Added Dao Services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Dao Services" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
