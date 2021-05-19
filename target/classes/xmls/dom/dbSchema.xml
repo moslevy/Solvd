@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="src/main/resources/parsers" >
+<TownHall>
+    <Properties>
+        <Property id="1">
+            <street_address>Alan</street_address>
+            <street_number>1234</street_number>
+            <apartment_number>74</apartment_number>
+            <owner>Joe</owner>
+        </Property>
+        <Property id="2">
+            <street_address>Warnes</street_address>
+            <street_number>4321</street_number>
+            <apartment_number>100</apartment_number>
+            <owner>Silvana</owner>
+        </Property>
+    </Properties>
+    <Employees>
+        <Employee id="1">
+            <first_name>Viole</first_name>
+            <last_name>Wino</last_name>
+            <ssn>111-22-3333</ssn>
+            <dob>05/10/1998</dob>
+            <start_date>09/11/2020</start_date>
+        </Employee>
+        <Employee id="2">
+            <first_name>Nati</first_name>
+            <last_name>Telco</last_name>
+            <ssn>111-22-3333</ssn>
+            <dob>01/09/1999</dob>
+            <start_date>09/11/2019</start_date>
+        </Employee>
+    </Employees>
+</TownHall>
+</user>
+
+
+
+
