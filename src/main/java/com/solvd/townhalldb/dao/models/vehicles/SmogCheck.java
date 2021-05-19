@@ -1,10 +1,10 @@
 package com.solvd.townhalldb.dao.models.vehicles;
 
-import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
+import com.solvd.townhalldb.dao.abstractClasses.AbstractEntity;
 
 import java.util.Date;
 
-public class SmogCheck extends BaseDTO {
+public class SmogCheck extends AbstractEntity {
     private Date passed_date;
     private Date exp_date;
 

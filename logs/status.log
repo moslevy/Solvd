@@ -266,3 +266,18 @@
 2021-04-30 08:32:33,169 [3] INFO  java.lang.Thread - Thread 3 returned the connection 3 to the connection pool and finished.
 2021-04-30 08:32:33,169 [2] INFO  java.lang.Thread - Thread 2 returned the connection 4 to the connection pool and finished.
 2021-04-30 08:32:33,169 [4] INFO  java.lang.Thread - Thread 4 returned the connection 2 to the connection pool and finished.
+2021-05-13 23:41:29,440 [2] INFO  java.lang.Thread - Thread 2 got the connection 4
+2021-05-13 23:41:29,440 [main] INFO  com.solvd.townhall.connectionPool.ConnectionsTest - Completable future 1
+2021-05-13 23:41:29,440 [0] INFO  java.lang.Thread - Thread 0 got the connection 0
+2021-05-13 23:41:29,440 [4] INFO  java.lang.Thread - Thread 4 got the connection 2
+2021-05-13 23:41:29,440 [5] INFO  java.lang.Thread - Thread 5 got the connection 1
+2021-05-13 23:41:29,443 [main] INFO  com.solvd.townhall.connectionPool.ConnectionsTest - Completable future 2
+2021-05-13 23:41:29,440 [3] INFO  java.lang.Thread - Thread 3 got the connection 3
+2021-05-13 23:41:29,443 [main] INFO  com.solvd.townhall.connectionPool.ConnectionsTest - Completable future 3
+2021-05-13 23:41:31,445 [5] INFO  java.lang.Thread - Thread 5 returned the connection 1 to the connection pool and finished.
+2021-05-13 23:41:31,445 [2] INFO  java.lang.Thread - Thread 2 returned the connection 4 to the connection pool and finished.
+2021-05-13 23:41:31,445 [1] INFO  java.lang.Thread - Thread 1 got the connection 2
+2021-05-13 23:41:31,446 [0] INFO  java.lang.Thread - Thread 0 returned the connection 0 to the connection pool and finished.
+2021-05-13 23:41:31,446 [4] INFO  java.lang.Thread - Thread 4 returned the connection 2 to the connection pool and finished.
+2021-05-13 23:41:31,445 [3] INFO  java.lang.Thread - Thread 3 returned the connection 3 to the connection pool and finished.
+2021-05-13 23:41:33,446 [1] INFO  java.lang.Thread - Thread 1 returned the connection 2 to the connection pool and finished.

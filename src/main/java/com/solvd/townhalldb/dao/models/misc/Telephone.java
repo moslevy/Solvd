@@ -1,9 +1,9 @@
 package com.solvd.townhalldb.dao.models.misc;
 
-import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
+import com.solvd.townhalldb.dao.abstractClasses.AbstractEntity;
 import com.solvd.townhalldb.dao.models.persons.Citizen;
 
-public class Telephone extends BaseDTO {
+public class Telephone extends AbstractEntity {
     private String number;
     private String type;
     private Citizen citizen;

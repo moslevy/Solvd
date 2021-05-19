@@ -1,10 +1,12 @@
 package com.solvd.townhalldb.dao.models.vehicles;
 
-import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
+import com.solvd.townhalldb.dao.abstractClasses.AbstractEntity;
 import com.solvd.townhalldb.dao.models.buildings.Dmv;
 import com.solvd.townhalldb.dao.models.persons.Citizen;
 
-public class Vehicle extends BaseDTO {
+import java.util.Objects;
+
+public class Vehicle extends AbstractEntity {
     private String make;
     private String model;
     private int year;
@@ -69,5 +71,31 @@ public class Vehicle extends BaseDTO {
 
     public void setCitizen(Citizen citizen) {
         this.citizen = citizen;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "id=" + id +
+                ", make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", year=" + year +
+                ", license_plate='" + license_plate + '\'' +
+                ", dmv=" + dmv +
+                ", citizen=" + citizen +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Vehicle)) return false;
+        Vehicle vehicle = (Vehicle) o;
+        return getYear() == vehicle.getYear() && Objects.equals(getMake(), vehicle.getMake()) && Objects.equals(getModel(), vehicle.getModel()) && Objects.equals(getLicense_plate(), vehicle.getLicense_plate()) && Objects.equals(getDmv(), vehicle.getDmv()) && Objects.equals(getCitizen(), vehicle.getCitizen());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getMake(), getModel(), getYear(), getLicense_plate(), getDmv(), getCitizen());
     }
 }

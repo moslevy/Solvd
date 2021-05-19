@@ -1,10 +1,10 @@
 package com.solvd.townhalldb.dao.models.buildings;
 
-import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
+import com.solvd.townhalldb.dao.abstractClasses.AbstractEntity;
 
 import java.sql.Time;
 
-public class Dmv extends BaseDTO {
+public class Dmv extends AbstractEntity {
     private String town;
     private String name;
     private Time time_open;

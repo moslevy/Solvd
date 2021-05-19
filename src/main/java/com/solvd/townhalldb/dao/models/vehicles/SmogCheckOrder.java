@@ -1,8 +1,8 @@
 package com.solvd.townhalldb.dao.models.vehicles;
 
-import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
+import com.solvd.townhalldb.dao.abstractClasses.AbstractEntity;
 
-public class SmogCheckOrder extends BaseDTO {
+public class SmogCheckOrder extends AbstractEntity {
 
     private Vehicle vehicle;
     private SmogCheck smogCheck;

@@ -1,10 +1,10 @@
 package com.solvd.townhalldb.dao.models.vehicles;
 
-import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
+import com.solvd.townhalldb.dao.abstractClasses.AbstractEntity;
 
 import java.util.Date;
 
-public class License extends BaseDTO {
+public class License extends AbstractEntity {
     private int number;
     private Date exp_date;
 

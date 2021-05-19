@@ -1,13 +1,14 @@
 package com.solvd.townhalldb.dao.models.persons;
 
-import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
+import com.solvd.townhalldb.dao.abstractClasses.AbstractEntity;
 import com.solvd.townhalldb.dao.models.vehicles.License;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.Objects;
 
 @XmlRootElement
-public class Citizen extends BaseDTO {
+public class Citizen extends AbstractEntity {
     @XmlElement(name = "first_name")
     private String first_name;
     @XmlElement(name = "last_name")
@@ -57,5 +58,29 @@ public class Citizen extends BaseDTO {
 
     public void setLicense(License license) {
         this.license = license;
+    }
+
+    @Override
+    public String toString() {
+        return "Citizen{" +
+                "id=" + id +
+                ", first_name='" + first_name + '\'' +
+                ", last_name='" + last_name + '\'' +
+                ", ssn='" + ssn + '\'' +
+                ", license=" + license +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Citizen citizen = (Citizen) o;
+        return Objects.equals(getFirst_name(), citizen.getFirst_name()) && Objects.equals(getLast_name(), citizen.getLast_name()) && Objects.equals(getSsn(), citizen.getSsn()) && Objects.equals(getLicense(), citizen.getLicense());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getFirst_name(), getLast_name(), getSsn(), getLicense());
     }
 }

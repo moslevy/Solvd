@@ -1,8 +1,8 @@
 package com.solvd.townhalldb.dao.models.misc;
 
-import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
+import com.solvd.townhalldb.dao.abstractClasses.AbstractEntity;
 
-public class State extends BaseDTO {
+public class State extends AbstractEntity {
     private String name;
 
     public State(long id, String state) {

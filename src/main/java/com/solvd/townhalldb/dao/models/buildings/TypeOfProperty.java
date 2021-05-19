@@ -1,8 +1,8 @@
 package com.solvd.townhalldb.dao.models.buildings;
 
-import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
+import com.solvd.townhalldb.dao.abstractClasses.AbstractEntity;
 
-public class TypeOfProperty extends BaseDTO {
+public class TypeOfProperty extends AbstractEntity {
     private String description;
 
     public TypeOfProperty(long id, String description) {

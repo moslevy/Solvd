@@ -1,6 +1,6 @@
 package com.solvd.townhalldb.dao.models.buildings;
 
-import com.solvd.townhalldb.dao.abstractClasses.BaseDTO;
+import com.solvd.townhalldb.dao.abstractClasses.AbstractEntity;
 import com.solvd.townhalldb.dao.models.misc.City;
 import com.solvd.townhalldb.dao.models.persons.Citizen;
 
@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public class Property extends BaseDTO {
+public class Property extends AbstractEntity {
     @XmlElement(name = "street_number")
     private int street_number;
     @XmlElement(name = "stree_address")

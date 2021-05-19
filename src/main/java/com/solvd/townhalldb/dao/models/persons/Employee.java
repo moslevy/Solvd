@@ -3,12 +3,15 @@ package com.solvd.townhalldb.dao.models.persons;
 import com.solvd.townhalldb.dao.models.abstractClasses.BaseDTO;
 import com.solvd.townhalldb.dao.models.adapters.DateAdapter;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.Date;
+import java.util.Objects;
 
-@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Employee extends BaseDTO {
     @XmlElement(name = "first_name")
     private String first_name;
@@ -75,4 +78,30 @@ public class Employee extends BaseDTO {
     public void setStart_date(Date start_date) {
         this.start_date = start_date;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", first_name='" + first_name + '\'' +
+                ", last_name='" + last_name + '\'' +
+                ", ssn='" + ssn + '\'' +
+                ", dob=" + dob +
+                ", start_date=" + start_date +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return Objects.equals(first_name, employee.first_name) && Objects.equals(last_name, employee.last_name) && Objects.equals(ssn, employee.ssn) && Objects.equals(dob, employee.dob) && Objects.equals(start_date, employee.start_date);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(first_name, last_name, ssn, dob, start_date);
+    }
 }
+

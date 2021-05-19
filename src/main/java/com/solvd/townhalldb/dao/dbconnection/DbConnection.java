@@ -4,8 +4,8 @@ import javax.sql.DataSource;
 import java.sql.*;
 
 public class DbConnection {
-    private static final String JDBC_URL = "jdbc:sqlserver://localhost:1433/townhalldb?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
-    private static final String JDBC_USER = "sa";
+    private static final String JDBC_URL = "jdbc:sqlserver://localhost:3306/townhalldb?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
+    private static final String JDBC_USER = "root";
     private static final String JDBC_PASS = "solvd1234";
     private static BasicDataSource dataSource;
 
