@@ -1,0 +1,23 @@
+package com.solvd.townhalldb.jackson.models.misc;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.solvd.townhalldb.dao.abstractClasses.AbstractEntity;
+
+public class State extends AbstractEntity {
+    @JsonProperty("name")
+    private String name;
+
+    public State(long id, String state) {
+        super(id);
+        this.name = state;
+    }
+    public State(){}
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}

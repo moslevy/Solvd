@@ -281,3 +281,12 @@
 2021-05-13 23:41:31,446 [4] INFO  java.lang.Thread - Thread 4 returned the connection 2 to the connection pool and finished.
 2021-05-13 23:41:31,445 [3] INFO  java.lang.Thread - Thread 3 returned the connection 3 to the connection pool and finished.
 2021-05-13 23:41:33,446 [1] INFO  java.lang.Thread - Thread 1 returned the connection 2 to the connection pool and finished.
+2021-05-20 00:05:21,422 [main] ERROR com.solvd.townhalldb.jackson.impl.buildings.TownHallDAO - com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "townhall" (class com.solvd.townhalldb.jackson.models.buildings.TownHall), not marked as ignorable (3 known properties: "county", "id", "employee"])
+ at [Source: (File); line: 2, column: 16] (through reference chain: com.solvd.townhalldb.jackson.models.buildings.TownHall["townhall"])
+2021-05-20 00:05:21,430 [main] ERROR com.solvd.townhalldb.jackson.impl.buildings.TownHallDAO - com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "townhall" (class com.solvd.townhalldb.jackson.models.buildings.TownHall), not marked as ignorable (3 known properties: "county", "id", "employee"])
+ at [Source: (File); line: 2, column: 16] (through reference chain: com.solvd.townhalldb.jackson.models.buildings.TownHall["townhall"])
+2021-05-20 00:05:21,433 [main] ERROR com.solvd.townhalldb.jackson.impl.buildings.TownHallDAO - com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "townhall" (class com.solvd.townhalldb.jackson.models.buildings.TownHall), not marked as ignorable (3 known properties: "county", "id", "employee"])
+ at [Source: (File); line: 2, column: 16] (through reference chain: com.solvd.townhalldb.jackson.models.buildings.TownHall["townhall"])
+2021-05-20 00:05:21,437 [main] ERROR com.solvd.townhalldb.jackson.impl.buildings.TownHallDAO - com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "townhall" (class com.solvd.townhalldb.jackson.models.buildings.TownHall), not marked as ignorable (3 known properties: "county", "id", "employee"])
+ at [Source: (File); line: 2, column: 16] (through reference chain: com.solvd.townhalldb.jackson.models.buildings.TownHall["townhall"])
+2021-05-20 00:05:21,443 [main] INFO  com.solvd.townhalldb.jackson.services.VehicleService - TownHall{id=400, county='null'}

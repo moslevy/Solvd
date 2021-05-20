@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
 
 public class PropertyService extends AbstractJdbcDao {
 
-    private final static Logger logger = LogManager.getLogger(TaxService.class);
+    private final static Logger logger = LogManager.getLogger(PropertyService.class);
     private final PropertyDAO propertyDAO = new PropertyDAO();
     private final CitizenDAO citizenDAO = new CitizenDAO();
 
