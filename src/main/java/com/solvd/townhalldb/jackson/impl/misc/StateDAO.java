@@ -2,10 +2,7 @@ package com.solvd.townhalldb.jackson.impl.misc;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.solvd.townhalldb.jackson.impl.buildings.PropertyDAO;
 import com.solvd.townhalldb.jackson.interfaces.misc.IStateDAO;
-import com.solvd.townhalldb.jackson.models.buildings.Dmv;
-import com.solvd.townhalldb.jackson.models.buildings.Property;
 import com.solvd.townhalldb.jackson.models.misc.State;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,7 +14,7 @@ import java.util.List;
 
 public class StateDAO implements IStateDAO {
 
-    private static final Logger logger = LogManager.getLogger(PropertyDAO.class);
+    private static final Logger logger = LogManager.getLogger(StateDAO.class);
     private static final File FILE = new File("src/main/resources/jsons/states.json");
     List<State> stateList = new ArrayList<State>();
 
@@ -25,7 +22,7 @@ public class StateDAO implements IStateDAO {
     public void create(State state) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            stateList = objectMapper.readValue(FILE, new TypeReference<List<Property>>() {
+            stateList = objectMapper.readValue(FILE, new TypeReference<List<State>>() {
             });
             stateList.add(state);
             objectMapper.writeValue(FILE, stateList);
@@ -38,7 +35,7 @@ public class StateDAO implements IStateDAO {
     public void update(State state) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            stateList = objectMapper.readValue(FILE, new TypeReference<List<Dmv>>() {
+            stateList = objectMapper.readValue(FILE, new TypeReference<List<State>>() {
             });
             stateList.stream()
                     .filter(stateElement -> stateElement.getId() == state.getId())
@@ -54,7 +51,7 @@ public class StateDAO implements IStateDAO {
     public State getById(long id) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            stateList = objectMapper.readValue(FILE, new TypeReference<List<Property>>() {
+            stateList = objectMapper.readValue(FILE, new TypeReference<List<State>>() {
             });
         } catch (IOException e) {
             logger.error(e);

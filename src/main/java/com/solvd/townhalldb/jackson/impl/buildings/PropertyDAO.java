@@ -3,7 +3,6 @@ package com.solvd.townhalldb.jackson.impl.buildings;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.solvd.townhalldb.jackson.interfaces.buildings.IPropertyDAO;
-import com.solvd.townhalldb.jackson.models.buildings.Dmv;
 import com.solvd.townhalldb.jackson.models.buildings.Property;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -36,7 +35,7 @@ public class PropertyDAO implements IPropertyDAO {
     public void update(Property property) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            propertyList = objectMapper.readValue(FILE, new TypeReference<List<Dmv>>(){});
+            propertyList = objectMapper.readValue(FILE, new TypeReference<List<Property>>(){});
             propertyList.stream()
                     .filter(dmvElement -> dmvElement.getId() == property.getId())
                     .findAny()

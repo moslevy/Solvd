@@ -17,11 +17,13 @@ public class Main {
         townHallDAO.create(townHall);
 
         townHall.setId(400);
+        townHall.setCounty("Columbus");
         townHallDAO.update(townHall);
 
         townHallDAO.delete(townHall);
 
-        logger.info(townHallDAO.getById(400));
+        logger.info(townHall.toString());
+        System.out.println(townHall.toString());
 
     }
 }

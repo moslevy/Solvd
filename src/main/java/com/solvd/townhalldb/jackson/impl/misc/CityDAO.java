@@ -3,8 +3,6 @@ package com.solvd.townhalldb.jackson.impl.misc;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.solvd.townhalldb.jackson.interfaces.misc.ICityDAO;
-import com.solvd.townhalldb.jackson.models.buildings.Dmv;
-import com.solvd.townhalldb.jackson.models.buildings.Property;
 import com.solvd.townhalldb.jackson.models.misc.City;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -24,7 +22,7 @@ public class CityDAO implements ICityDAO {
     public void create(City city) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            cityList = objectMapper.readValue(FILE, new TypeReference<List<Property>>() {
+            cityList = objectMapper.readValue(FILE, new TypeReference<List<City>>() {
             });
             cityList.add(city);
             objectMapper.writeValue(FILE, cityList);
@@ -37,7 +35,7 @@ public class CityDAO implements ICityDAO {
     public void update(City city) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            cityList = objectMapper.readValue(FILE, new TypeReference<List<Dmv>>(){});
+            cityList = objectMapper.readValue(FILE, new TypeReference<List<City>>(){});
             cityList.stream()
                     .filter(dmvElement -> dmvElement.getId() == city.getId())
                     .findAny()
