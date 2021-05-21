@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<licenses>
+    <license id="1">
+        <number>123451234</number>
+        <exp_date>02/10/2024</exp_date>
+    </license>
+    <license id="2">
+        <number>9876542</number>
+        <exp_date>10/09/2022</exp_date>
+    </license>
+</licenses>

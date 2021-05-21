@@ -1,0 +1,22 @@
+{
+  "smogchecks": {
+    "smogcheck": [
+      {
+        "-id": "1",
+        "passed_date": "11/02/2019",
+        "exp_date": "11/03/2024"
+      },
+      {
+        "-id": "2",
+        "passed_date": "10/02/2018",
+        "exp_date": "10/03/2023"
+      },
+      {
+        "-id": "3",
+        "passed_date": "01/02/2017",
+        "exp_date": "01/03/2022"
+      }
+    ]
+  },
+  "#standalone": "yes"
+}

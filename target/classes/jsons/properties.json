@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "property": [
+      {
+        "-id": "1",
+        "street_address": "Alan",
+        "street_number": "1234",
+        "apartment_number": "74",
+        "owner": "Joe"
+      },
+      {
+        "-id": "2",
+        "street_address": "Warnes",
+        "street_number": "4321",
+        "apartment_number": "100",
+        "owner": "Silvana"
+      }
+    ]
+  },
+  "#standalone": "yes"
+}

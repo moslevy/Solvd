@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<citizens>
+    <citizen id="1">
+        <first_name>John</first_name>
+        <last_name>Smith</last_name>
+        <ssn>444-00-2222</ssn>
+        <license id="1">
+            <number>123998734</number>
+            <exp_date>09/09/2025</exp_date>
+        </license>
+    </citizen>
+    <citizen id="2">
+        <first_name>Carol</first_name>
+        <last_name>Jackson</last_name>
+        <ssn>444-00-4444</ssn>
+        <license id="2">
+            <number>98765442</number>
+            <exp_date>01/10/2030</exp_date>
+        </license>
+    </citizen>
+</citizens>

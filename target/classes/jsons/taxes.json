@@ -1,0 +1,25 @@
+{
+  "taxes": {
+    "tax": {
+      "-id": "1",
+      "description": "School Tax",
+      "exp_date": "07/10/2021",
+      "amount": "135,39",
+      "taxbill": {
+        "-id": "1",
+        "townhall": {
+          "-id": "",
+          "county": "Los Angeles"
+        },
+        "property": {
+          "-id": "1",
+          "street_address": "Alan",
+          "street_number": "1234",
+          "apartment_number": "74",
+          "owner": "Joe"
+        }
+      }
+    }
+  },
+  "#standalone": "yes"
+}

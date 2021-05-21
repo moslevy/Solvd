@@ -119,6 +119,12 @@ Values ('School Tax', '2021-10-09', 1890.87, 16),
 ('City Tax', '2021-11-01', 90.22, 20),
 ('State Tax', '2021-11-01', 490.11, 20)
 
+INSERT INTO Telephones(number,type,citizens_id)
+VALUES('15-4444-3333','Celular',5),
+('011-4444-4444','Home',5),
+('011-4444-5555','Work',5),
+('011-4444-6666','Celular',5)
+
 INSERT into Cities (name, stateCode)
 VALUES ('Abbeville', 'AL'),
  ('Abbeville', 'GA'),

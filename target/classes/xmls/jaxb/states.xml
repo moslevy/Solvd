@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<states>
+    <state id="1">
+        <name>California</name>
+    </state>
+    <state id="2">
+        <name>Illinois</name>
+    </state>
+    <state id="3">
+        <name>Florida</name>
+    </state>
+</states>
