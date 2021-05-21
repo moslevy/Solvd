@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26bbef8c-e474-4bf7-9559-0fee44f7fba2" name="Default Changelist" comment="Implemented Jackson to parse Json.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/AltersTables.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/InsertCities.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/Inserts.sql" afterDir="false" />
+    <list default="true" id="26bbef8c-e474-4bf7-9559-0fee44f7fba2" name="Default Changelist" comment="SQL table insertion for the Telephones table.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/InsertionQueries.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/status.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/status.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jackson/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jackson/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jackson/impl/buildings/PropertyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jackson/impl/buildings/PropertyDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jackson/impl/misc/CityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jackson/impl/misc/CityDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jackson/impl/misc/StateDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/townhalldb/jackson/impl/misc/StateDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/TableInsertionQueries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/TableInsertionQueries.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/TablesCreation.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/TablesCreation.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/InsertCities.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/CitiesInsertQuery.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/Inserts.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/TableInsertionQueries.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -447,7 +440,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621479968610</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="SQL table insertions and alterations">
+      <created>1621543514923</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1621543514923</updated>
+    </task>
+    <task id="LOCAL-00038" summary="SQL table insertion for the Telephones table.">
+      <created>1621600938301</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1621600938301</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -467,8 +474,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented Maven and added log4j dependencies." />
-    <MESSAGE value="Modified file structure of hw3 package." />
     <MESSAGE value="Added CustomExceptionA.java" />
     <MESSAGE value="hw 4 and 5." />
     <MESSAGE value="Implemented Exceptions." />
@@ -492,7 +497,9 @@
     <MESSAGE value="Jackson implementation." />
     <MESSAGE value="Json parser implementation with Jackson." />
     <MESSAGE value="Implemented Jackson to parse Json." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Jackson to parse Json." />
+    <MESSAGE value="SQL table insertions and alterations" />
+    <MESSAGE value="SQL table insertion for the Telephones table." />
+    <option name="LAST_COMMIT_MESSAGE" value="SQL table insertion for the Telephones table." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
